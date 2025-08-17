@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" as="image" href="images/new-logo.png" />
+    <link rel="preload" as="image" href="images/coach-tommy-tan.jpg" />
+    <link rel="preload" as="image" href="images/coach-jorden-tsan.jpg" />
+    <link rel="preload" as="image" href="images/coach-greg-anketell.jpg" />
+    <link rel="preload" as="image" href="images/coach-adrian-tan.jpg" />
+    <link rel="preload" as="image" href="images/whatsapp-icon-white.svg" />
+    <link href="merged-output.css" rel="stylesheet">
+    <title>True Golf Singapore</title>
+    <meta name="description" content="Created with v0" />
+    <meta name="generator" content="v0.dev" />
+
+</head>
+
+<body>
+    <div class="min-h-screen">
+        <nav class="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-4">
+                    <a class="flex items-center gap-3" href="index.html">
+                        <img src="images/new-logo.png" alt="True Golf Singapore" class="h-12 w-12" />
+                        <span class="text-2xl font-bold text-[#073c2f]">True Golf Singapore</span>
+                    </a>
+                    <div class="hidden md:flex space-x-8">
+                        <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="index.html">Home</a>
+                        <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="about.html">About Us</a>
+                        <a class="transition-colors text-[#073c2f] font-medium" href="coaches.html">Coaches</a>
+                        <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="rates.html">Rates</a>
+                        <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="contact.html">Contact</a>
+                    </div>
+                    <div class="hidden md:block">
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 bg-[#073c2f] hover:bg-[#073c2f]/90"
+                            href="contact.html">Book a Lesson</a>
+                    </div>
+                    <!-- Language Toggle -->
+                    <div class="relative ml-4">
+                        <button id="lang-toggle-btn"
+                            class="flex items-center gap-2 px-3 py-2 rounded-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-[#073c2f]"
+                            aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#073c2f]" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <circle cx="12" cy="12" r="10" stroke-width="2" />
+                                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"
+                                    stroke-width="2" />
+                            </svg>
+                            <span id="current-lang">English</span>
+                            <svg class="h-4 w-4 ml-1" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div id="lang-dropdown"
+                            class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-50 hidden">
+                            <a href="coaches.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">English</a>
+                            <a href="coaches/zh.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">简体中文</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Bahasa Malaysia</a>
+                        </div>
+                    </div>
+                    <button
+                        class="md:hidden p-2 rounded-md text-gray-700 hover:text-[#073c2f] hover:bg-gray-100 transition-colors"
+                        aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-menu h-6 w-6">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <section class="bg-[#073c2f] py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Meet Our Expert Coaches</h1>
+                    <p class="text-xl text-white max-w-3xl mx-auto">Our team of PGA-certified professionals brings
+                        decades of combined experience to help you achieve your golfing goals. Each coach specialises in
+                        different aspects of the game to provide comprehensive instruction.</p>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="space-y-8">
+                    <div
+                        class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
+                        <div class="flex flex-col items-center text-center p-8">
+                            <img src="images/coach-tommy-tan.jpg" alt="Tommy Tan"
+                                class="w-44 h-44 rounded-full object-cover shadow-lg mb-6"
+                                style="object-position:center 40%" />
+                            <div class="flex flex-col space-y-1.5 p-6 text-center pb-4">
+                                <div class="font-semibold tracking-tight text-2xl">Tommy Tan</div>
+                                <div class="text-[#073c2f] font-medium text-lg">Head Coach/Founder</div>
+                            </div>
+                            <div class="p-6 pt-0 max-w-4xl">
+                                <p class="text-gray-600 leading-relaxed mb-6">
+                                    Tommy started golf at a very young age and is an alumni of the Seletar Junior
+                                    Programme. He proceeded to compete internationally and then became a PGA certified
+                                    coach.<br />
+                                    <br />
+                                    Tommy has vast experience competing professionally and is eager to share his
+                                    knowledge with others. While training, he had the privilege to be mentored by the
+                                    well renowned Greg Anketell. He has also had the opportunity to train with several
+                                    other prestigious golf instructors including Brett Rumford.<br />
+                                    <br />During his time coaching, Tommy has worked with golfers of different skill
+                                    levels and ages. He strives to help his students build a strong foundation in golf
+                                    and is always looking for new methods and techniques to help improve their golf
+                                    game. Most importantly, Tommy hopes to spread his love, passion and enjoyment for
+                                    the game.
+                                </p>
+                                <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 bg-[#073c2f] hover:bg-[#073c2f]/90"
+                                    href="coaches/tommy-tan.html">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
+                        <div class="flex flex-col items-center text-center p-8">
+                            <img src="images/coach-jorden-tsan.jpg" alt="Jordan Tsan"
+                                class="w-44 h-44 rounded-full object-cover shadow-lg mb-6" />
+                            <div class="flex flex-col space-y-1.5 p-6 text-center pb-4">
+                                <div class="font-semibold tracking-tight text-2xl">Jordan Tsan</div>
+                                <div class="text-[#073c2f] font-medium text-lg">Coach</div>
+                            </div>
+                            <div class="p-6 pt-0 max-w-4xl">
+                                <p class="text-gray-600 leading-relaxed mb-6">
+                                    Jordan excels at simplifying complex golf concepts, making them actionable for all
+                                    skill levels through clear demonstrations and feel-based learning. He tailors his
+                                    coaching to each individual &#x27;s unique physique and learning style, believing in
+                                    the most efficient and repeatable swing for that player rather than a generic
+                                    &quot;perfect &quot;one.<br />
+                                    <br />He fosters a positive and engaging environment, using his patience and
+                                    encouragement to help golfers of all abilities achieve their personal goals and
+                                    unlock their potential.
+                                </p>
+                                <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 bg-[#073c2f] hover:bg-[#073c2f]/90"
+                                    href="coaches/jordan-tsan.html">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div
+                            class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
+                            <div class="md:flex md:flex-col">
+                                <div class="flex justify-center items-center p-6">
+                                    <img src="images/coach-greg-anketell.jpg" alt="Greg Anketell"
+                                        class="w-44 h-44 rounded-full object-cover shadow-lg" />
+                                </div>
+                                <div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="font-semibold tracking-tight text-xl">Greg Anketell</div>
+                                        <div class="text-sm text-[#073c2f] font-medium">Head Advisor/Program Director
+                                        </div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <p class="text-gray-600 mb-4">Greg Anketell is a renowned golf instructor with a
+                                            distinguished career spanning over 30 years. He has worked with a wide range
+                                            of golfers, from beginners to advanced players, and served as Junior Academy
+                                            Director.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
+                            <div class="md:flex md:flex-col">
+                                <div class="flex justify-center items-center p-6">
+                                    <img src="images/coach-adrian-tan.jpg" alt="Adrian Tan"
+                                        class="w-44 h-44 rounded-full object-cover shadow-lg"
+                                        style="object-position:center 35%" />
+                                </div>
+                                <div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="font-semibold tracking-tight text-xl">Adrian Tan</div>
+                                        <div class="text-sm text-[#073c2f] font-medium">Coach</div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <p class="text-gray-600 mb-4">Adrian has over 15 years of coaching as a
+                                            Singapore PGA AAA instructor. He has had the opportunity to work with a wide
+                                            range of golfers, from beginners to elite players. Being a TPI certified
+                                            (Level 1 and Level 2 Junior) golf coach, he believes in implementing
+                                            structured and easy-to-follow training programs to develop the skills and
+                                            passion for golfers to enjoy the game.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 bg-[#073c2f] text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Work with Our Coaches?</h2>
+                <p class="text-xl mb-8 opacity-90">Book a lesson with one of our expert instructors and start improving
+                    your game today.</p>
+                <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 rounded-md px-8"
+                    href="contact.html">Book Your Lesson</a>
+            </div>
+        </section>
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">True Golf Singapore</h3>
+                        <p class="text-gray-400">Professional golf instruction in the heart of Singapore. Helping
+                            golfers achieve their potential.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Quick Links</h4>
+                        <div class="space-y-2">
+                            <a class="block text-gray-400 hover:text-white transition-colors" href="about.html">About
+                                Us</a>
+                            <a class="block text-gray-400 hover:text-white transition-colors" href="coaches.html">Our
+                                Coaches</a>
+                            <a class="block text-gray-400 hover:text-white transition-colors"
+                                href="rates.html">Rates</a>
+                            <a class="block text-gray-400 hover:text-white transition-colors"
+                                href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Contact Info</h4>
+                        <div class="space-y-2 text-gray-400">
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-map-pin h-4 w-4">
+                                    <path
+                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                    </path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>101 Seletar Club Rd, Singapore 798273</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-phone h-4 w-4">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                <span>+65 9833 3356</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-e-mail h-4 w-4">
+                                    <path
+                                        d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" />
+                                </svg>
+                                <span>hello@true-golf-singapore.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                    <p>© 2025 True Golf Singapore. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="fixed top-0 left-0 right-0 z-50 md:hidden hidden"
+            style="background: rgba(255,255,255,0.97);">
+            <div class="w-full bg-white rounded-b-lg shadow-lg flex flex-col px-4 pb-4 pt-2">
+                <div class="flex items-center justify-between px-2 py-5 border-b">
+                    <a class="flex items-center gap-3" href="coaches.html">
+                        <img src="images/new-logo.png" alt="True Golf Singapore" class="h-10 w-10" />
+                        <span class="text-2xl font-bold text-[#073c2f]">True Golf Singapore</span>
+                    </a>
+                    <button id="close-mobile-menu"
+                        class="p-2 rounded-md text-gray-700 hover:text-[#073c2f] hover:bg-gray-100 transition-colors"
+                        aria-label="Close menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-1 mt-2">
+                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
+                        href="index.html">Home</a>
+                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
+                        href="about.html">About Us</a>
+                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-[#073c2f] bg-green-50"
+                        href="coaches.html">Coaches</a>
+                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
+                        href="rates.html">Rates</a>
+                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
+                        href="contact.html">Contact</a>
+                    <div class="px-3 py-2">
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 w-full bg-[#073c2f] hover:bg-[#073c2f]/90"
+                            href="contact.html">Book a Lesson</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <a href="https://wa.me/6598333356" target="_blank" rel="noopener noreferrer"
+            class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20b858] rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
+            aria-label="Contact us on WhatsApp">
+            <div class="w-12 h-12 flex items-center justify-center">
+                <img src="images/whatsapp-icon-white.svg" alt="WhatsApp" class="w-8 h-8" />
+            </div>
+            <div
+                class="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                Chat with us on WhatsApp<div
+                    class="absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-gray-800">
+                </div>
+            </div>
+        </a>
+        <script>
+            const btn = document.querySelector('.md\\:hidden[aria-label="Toggle menu"]');
+            const menu = document.getElementById('mobile-menu');
+            const closeBtn = document.getElementById('close-mobile-menu');
+            btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+            });
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+            // Language Toggle
+            const langBtn = document.getElementById('lang-toggle-btn');
+            const langDropdown = document.getElementById('lang-dropdown');
+            langBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                langDropdown.classList.toggle('hidden');
+                langBtn.setAttribute('aria-expanded', langDropdown.classList.contains('hidden') ? 'false' : 'true');
+            });
+            document.addEventListener('click', function (e) {
+                if (!langDropdown.classList.contains('hidden')) {
+                    langDropdown.classList.add('hidden');
+                    langBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+            langDropdown.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        </script>
+    </div>
+</body>
+
+</html>
