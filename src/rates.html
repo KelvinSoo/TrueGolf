@@ -19,7 +19,8 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1563">
     <meta property="og:image:height" content="1563">
-    <meta property="og:description" content="True Gold Singapore offers professional golf instruction with certified coaches. From beginners to advanced players, we help you achieve your golfing goals with personalised training programs.">
+    <meta property="og:description"
+        content="True Gold Singapore offers professional golf instruction with certified coaches. From beginners to advanced players, we help you achieve your golfing goals with personalised training programs.">
     <meta name="description" content="Created with v0" />
     <meta name="generator" content="v0.dev" />
 
@@ -87,22 +88,23 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Golf Lesson Plans</h1>
-                    <p class="text-xl text-white max-w-3xl mx-auto mb-8">Flexible options for every golfer. Book single lessons or save with a package.</p>
+                    <p class="text-xl text-white max-w-3xl mx-auto mb-8">Flexible options for every golfer. Book single
+                        lessons or save with a package.</p>
                 </div>
             </div>
         </section>
         <section class="py-20 bg-gray-50">
             <!-- Toggle Buttons -->
-            <div class="container mx-auto max-w-2xl mb-12">
-                <div id="rate-toggle" class="flex bg-white border rounded-xl shadow-inner p-1 gap-2 w-[420px]">
+            <div class="container mx-auto max-w-3xl mb-12 justify-center px-8">
+                <div id="rate-toggle" class="flex bg-white border rounded-xl shadow-inner p-1 gap-2">
                     <button id="toggle-adult"
-                        class="flex-1 px-8 py-2 rounded-xl font-medium text-white bg-[#073c2f] transition-colors focus:outline-none"
+                        class="flex-1 px-8 py-2 rounded-xl md:w- font-medium text-white bg-[#073c2f] transition-colors focus:outline-none"
                         aria-pressed="true">Adult</button>
                     <button id="toggle-junior"
                         class="flex-1 px-8 py-2 rounded-xl font-medium text-[#073c2f] bg-transparent hover:bg-[#e5e5e5] transition-colors focus:outline-none"
                         aria-pressed="false">Junior</button>
                     <button id="toggle-kinder"
-                        class="flex-1 px-8 py-2 rounded-xl font-medium text-[#073c2f] bg-transparent hover:bg-[#e5e5e5] transition-colors focus:outline-none"
+                        class="flex-1 px-8 py-2 rounded-xl font-medium text-[#073c2f] bg-transparent aria-pressed:true:hover:bg-[#073c2f] hover:bg-[#e5e5e5] transition-colors focus:outline-none"
                         aria-pressed="false">Junior Term & Kinder</button>
                 </div>
             </div>
@@ -686,11 +688,11 @@
                     buttons.forEach((b, i) => {
                         if (i === idx) {
                             b.classList.add('bg-[#073c2f]', 'text-white');
-                            b.classList.remove('bg-transparent', 'text-[#073c2f]');
+                            b.classList.remove('bg-transparent', 'text-[#073c2f]', 'hover:bg-[#e5e5e5]');
                             b.setAttribute('aria-pressed', 'true');
                         } else {
                             b.classList.remove('bg-[#073c2f]', 'text-white');
-                            b.classList.add('bg-transparent', 'text-[#073c2f]');
+                            b.classList.add('bg-transparent', 'text-[#073c2f]', 'hover:bg-[#e5e5e5]');
                             b.setAttribute('aria-pressed', 'false');
                         }
                     });
@@ -700,8 +702,6 @@
         </script>
     </div>
 </body>
-<!-- Mirrored from golf.soofamily.myds.me/about by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Jul 2025 05:03:58 GMT -->
-
 </html>
 <!DOCTYPE html>
 <html lang="en">
