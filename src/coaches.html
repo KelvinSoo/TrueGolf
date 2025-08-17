@@ -36,7 +36,7 @@
                         <img src="images/new-logo.png" alt="True Golf Singapore" class="h-12 w-12" />
                         <span class="text-2xl font-bold text-[#073c2f]">True Golf Singapore</span>
                     </a>
-                    <div class="hidden md:flex space-x-8">
+                    <div class="hidden lg:flex space-x-8 p-4">
                         <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="index.html">Home</a>
                         <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="about.html">About Us</a>
                         <a class="transition-colors text-[#073c2f] font-medium" href="coaches.html">Coaches</a>
@@ -48,7 +48,7 @@
                             href="contact.html">Book a Lesson</a>
                     </div>
                     <!-- Language Toggle -->
-                    <div class="relative ml-4">
+                    <div class="relative ml-4 mr-2 md:mr-8">
                         <button id="lang-toggle-btn"
                             class="flex items-center gap-2 px-3 py-2 rounded-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-[#073c2f]"
                             aria-haspopup="true" aria-expanded="false">
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                     <button
-                        class="md:hidden p-2 rounded-md text-gray-700 hover:text-[#073c2f] hover:bg-gray-100 transition-colors"
+                        class="lg:hidden p-2 rounded-lg text-gray-700 hover:text-[#073c2f] hover:bg-gray-100 transition-colors md:absolute md:right-2"
                         aria-label="Toggle menu">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -277,7 +277,7 @@
             </div>
         </footer>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="fixed top-0 left-0 right-0 z-50 md:hidden hidden"
+        <div id="mobile-menu" class="fixed top-0 left-0 right-0 z-50 lg:hidden hidden"
             style="background: rgba(255,255,255,0.97);">
             <div class="w-full bg-white rounded-b-lg shadow-lg flex flex-col px-4 pb-4 pt-2">
                 <div class="flex items-center justify-between px-2 py-5 border-b">
@@ -327,7 +327,7 @@
             </div>
         </a>
         <script>
-            const btn = document.querySelector('.md\\:hidden[aria-label="Toggle menu"]');
+            const btn = document.querySelector('.lg\\:hidden[aria-label="Toggle menu"]');
             const menu = document.getElementById('mobile-menu');
             const closeBtn = document.getElementById('close-mobile-menu');
             btn.addEventListener('click', () => {
