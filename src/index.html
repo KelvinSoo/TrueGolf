@@ -28,31 +28,36 @@
 
 <body>
     <div class="min-h-screen">
-        <nav class="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
+        <!-- Navigation Bar -->
+        <nav class="border-b bg-[#F8F7F2] backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center py-4">
-                    <a class="flex items-center gap-3" href="index.html">
+                    <a class="items-center gap-3 hidden xl:block" href="index.html">
+                        <img src="images/horizontal-logo.png" alt="True Golf Singapore" class="h-8 " />
+                    </a>
+                    <!-- Spacer -->
+                    <div class="xl:w-40"></div>
+                    <a class="flex items-center gap-3 xl:hidden" href="index.html">
                         <img src="images/new-logo.png" alt="True Golf Singapore" class="h-12 w-12" />
-                        <span class="text-2xl font-bold text-[#073c2f]">True Golf Singapore</span>
+                        <span class="text-2xl font-bold text-[#083C2F]">True Golf Singapore</span>
                     </a>
                     <div class="hidden lg:flex space-x-8 p-4">
-                        <a class="transition-colors text-[#073c2f] font-medium" href="index.html">Home</a>
-                        <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="about.html">About Us</a>
-                        <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="coaches.html">Coaches</a>
-                        <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="rates.html">Rates</a>
-                        <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="contact.html">Contact</a>
+                        <a class="transition-colors text-gray-700 hover:text-[#083C2F]" href="about.html">About Us</a>
+                        <a class="transition-colors text-gray-700 hover:text-[#083C2F]" href="coaches.html">Coaches</a>
+                        <a class="transition-colors text-gray-700 hover:text-[#083C2F]" href="rates.html">Rates</a>
+                        <a class="transition-colors text-gray-700 hover:text-[#083C2F]" href="contact.html">Contact</a>
 
                     </div>
                     <div class="hidden md:block">
-                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 bg-[#073c2f] hover:bg-[#073c2f]/90"
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 bg-[#083C2F] hover:bg-[#083C2F]/90"
                             href="contact.html">Book a Lesson</a>
                     </div>
                     <!-- Language Toggle -->
-                    <div class="relative ml-4 mr-2 md:mr-8">
+                    <div class="relative ml-2 mr-2 md:mr-8">
                         <button id="lang-toggle-btn"
-                            class="flex items-center gap-2 px-3 py-2 rounded-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-[#073c2f]"
+                            class="flex items-center gap-2 px-3 py-2 rounded-2xl border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-[#083C2F]"
                             aria-haspopup="true" aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#073c2f]" fill="none"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#083C2F]" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <circle cx="12" cy="12" r="10" stroke-width="2" />
                                 <path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"
@@ -72,7 +77,7 @@
                         </div>
                     </div>
                     <button
-                        class="lg:hidden p-2 rounded-lg text-gray-700 hover:text-[#073c2f] hover:bg-gray-100 transition-colors md:absolute md:right-2"
+                        class="lg:hidden p-2 rounded-lg text-gray-700 hover:text-[#083C2F] hover:bg-gray-100 transition-colors md:absolute md:right-2"
                         aria-label="Toggle menu">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -85,20 +90,23 @@
                 </div>
             </div>
         </nav>
-        <section class="relative bg-[#073c2f] py-20">
+
+        <section class="relative bg-[#083C2F] py-14">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Master Your Golf Game in Singapore
+                        <h1 class="text-4xl md:text-6xl font-bold text-[#F8F7F2] mb-6">Master Your Golf Game in
+                            Singapore
                         </h1>
-                        <p class="text-xl text-white mb-8">Professional golf instruction with certified coaches. From
+                        <p class="text-xl text-[#F8F7F2] mb-8">Professional golf instruction with certified coaches.
+                            From
                             beginners to advanced players, we help you achieve your golfing goals with personalised
                             training programs.</p>
                         <div class="flex flex-col sm:flex-row gap-4">
-                            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 rounded-md px-8 bg-white text-[#073c2f] hover:bg-gray-100"
+                            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 rounded-xl px-4 bg-[#F8F7F2] text-[#083C2F] hover:bg-gray-100"
                                 href="contact.html">Start Your Journey</a>
-                            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border h-11 rounded-md px-8 border-white text-white hover:bg-white hover:text-[#073c2f] bg-transparent"
-                                href="coaches.html">Meet Our Coaches</a>
+                            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border h-11 rounded-xl px-8 border-[#F8F7F2] text-[#F8F7F2] hover:bg-[#F8F7F2] hover:text-[#083C2F] bg-transparent"
+                                href="coaches.html">Our Coaches</a>
                         </div>
                     </div>
                     <div class="relative">
@@ -109,26 +117,28 @@
                 </div>
             </div>
         </section>
-        <section class="py-20 bg-white">
+        <section class="py-20 bg-[#F8F7F2]">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose True Golf Singapore?</h2>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-[#083C2F] mb-4">Why Choose True Golf Singapore?
+                    </h2>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto">We combine traditional golf instruction with
                         modern techniques to deliver exceptional results for golfers of all skill levels.</p>
                 </div>
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center">
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center bg-[#F8F7F2]">
                         <div class="flex flex-col space-y-1.5 p-6">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round"
-                                class="lucide lucide-award h-12 w-12 text-[#073c2f] mx-auto mb-4">
+                                class="lucide lucide-award h-12 w-12 text-[#083C2F] mx-auto mb-4">
                                 <path
                                     d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
                                 </path>
                                 <circle cx="12" cy="8" r="6"></circle>
                             </svg>
-                            <div class="text-2xl font-semibold leading-none tracking-tight">Certified Professionals
+                            <div class="text-2xl font-semibold leading-none tracking-tight text-[#083C2F]">Certified
+                                Professionals
                             </div>
                         </div>
                         <div class="p-6 pt-0">
@@ -136,35 +146,37 @@
                                 experience in professional golf instruction.</div>
                         </div>
                     </div>
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center">
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center bg-[#F8F7F2]">
                         <div class="flex flex-col space-y-1.5 p-6">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round"
-                                class="lucide lucide-users h-12 w-12 text-[#073c2f] mx-auto mb-4">
+                                class="lucide lucide-users h-12 w-12 text-[#083C2F] mx-auto mb-4">
                                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                 <circle cx="9" cy="7" r="4"></circle>
                                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                             </svg>
-                            <div class="text-2xl font-semibold leading-none tracking-tight">Personalised Training</div>
+                            <div class="text-2xl font-semibold leading-none tracking-tight text-[#083C2F]">Personalised
+                                Training</div>
                         </div>
                         <div class="p-6 pt-0">
                             <div class="text-sm text-muted-foreground">Individual and group lessons tailored to your
                                 specific needs and skill level.</div>
                         </div>
                     </div>
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center">
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center bg-[#F8F7F2]">
                         <div class="flex flex-col space-y-1.5 p-6">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round"
-                                class="lucide lucide-target h-12 w-12 text-[#073c2f] mx-auto mb-4">
+                                class="lucide lucide-target h-12 w-12 text-[#083C2F] mx-auto mb-4">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <circle cx="12" cy="12" r="6"></circle>
                                 <circle cx="12" cy="12" r="2"></circle>
                             </svg>
-                            <div class="text-2xl font-semibold leading-none tracking-tight">Modern Facilities</div>
+                            <div class="text-2xl font-semibold leading-none tracking-tight text-[#083C2F]">Modern
+                                Facilities</div>
                         </div>
                         <div class="p-6 pt-0">
                             <div class="text-sm text-muted-foreground">State-of-the-art practice facilities with video
@@ -174,13 +186,15 @@
                 </div>
             </div>
         </section>
-        <section class="py-20 bg-[#073c2f] text-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Improve Your Golf Game?</h2>
-                <p class="text-xl mb-8 opacity-90">Book your first lesson today and start your journey to better golf.
-                </p>
-                <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 rounded-md px-8"
+        <section class="relative py-20 bg-[url(images/seletar-1360x765.webp)] bg-cover bg-center text-white">
+            <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+            <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to train the TRUE Way?</h2>
+                <p class="text-xl mb-8 opacity-90">Join the academy. Trust the process.</p>
+                <a class="mr-2 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 rounded-xl px-8"
                     href="contact.html">Contact Us Now</a>
+                <a class="ml-2 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border h-11 rounded-xl px-8 border-[#F8F7F2] text-[#F8F7F2] hover:bg-[#F8F7F2] hover:text-[#083C2F] bg-transparent"
+                    href="coaches.html">Our Coaches</a>
             </div>
         </section>
         <footer class="bg-gray-900 text-white py-12">
@@ -190,6 +204,15 @@
                         <h3 class="text-xl font-bold mb-4">True Golf Singapore</h3>
                         <p class="text-gray-400">Professional golf instruction in the heart of Singapore. Helping
                             golfers achieve their potential.</p>
+                        <div class="mt-4 flex gap-4 items-center">
+                            <a href="https://instagram.com/truegolfsingapore" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <img src="images/Assets/Icons/instagram_icon.png" alt="Instagram" class="w-8 h-8" />
+                            </a>
+                            <a href="https://tiktok.com/@truegolfsingapore" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                <img src="images/Assets/Icons/tiktok_icon.png" alt="TikTok" class="w-8 h-8" />
+                            </a>
+                        </div>
+                    
                     </div>
                     <div>
                         <h4 class="font-semibold mb-4">Quick Links</h4>
@@ -246,16 +269,15 @@
             </div>
         </footer>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="fixed top-0 left-0 right-0 z-50 lg:hidden hidden"
-            style="background: rgba(255,255,255,0.97);">
+        <div id="mobile-menu" class="fixed top-0 left-0 right-0 z-50 lg:hidden hidden bg-white">
             <div class="w-full bg-white rounded-b-lg shadow-lg flex flex-col px-4 pb-4 pt-2">
                 <div class="flex items-center justify-between px-2 py-5 border-b">
                     <a class="flex items-center gap-3" href="index.html">
                         <img src="images/new-logo.png" alt="True Golf Singapore" class="h-10 w-10" />
-                        <span class="text-2xl font-bold text-[#073c2f]">True Golf Singapore</span>
+                        <span class="text-2xl font-bold text-[#083C2F]">True Golf Singapore</span>
                     </a>
                     <button id="close-mobile-menu"
-                        class="p-2 rounded-md text-gray-700 hover:text-[#073c2f] hover:bg-gray-100 transition-colors"
+                        class="p-2 rounded-md text-gray-700 hover:text-[#083C2F] hover:bg-gray-100 transition-colors"
                         aria-label="Close menu">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" stroke-width="2">
@@ -265,18 +287,18 @@
                     </button>
                 </div>
                 <nav class="flex flex-col gap-1 mt-2">
-                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-[#073c2f] bg-green-50"
+                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-[#083C2F] bg-green-50"
                         href="index.html">Home</a>
-                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
+                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#083C2F] hover:bg-gray-50"
                         href="about.html">About Us</a>
-                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
+                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#083C2F] hover:bg-gray-50"
                         href="coaches.html">Coaches</a>
-                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
+                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#083C2F] hover:bg-gray-50"
                         href="rates.html">Rates</a>
-                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
+                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#083C2F] hover:bg-gray-50"
                         href="contact.html">Contact</a>
                     <div class="px-3 py-2">
-                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 w-full bg-[#073c2f] hover:bg-[#073c2f]/90"
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 w-full bg-[#083C2F] hover:bg-[#083C2F]/90"
                             href="contact.html">Book a Lesson</a>
                     </div>
                 </nav>
@@ -325,9 +347,6 @@
             });
         </script>
     </div>
-
 </body>
 
 </html>
-<!DOCTYPE html>
-<html lang="en">
