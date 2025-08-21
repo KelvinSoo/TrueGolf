@@ -1,505 +1,770 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8">
+    <meta charset="utf-8">
 
-<head>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preload" as="image" href="images/new-logo.png" />
-    <link rel="preload" as="image" href="images/about-golfer-portrait.png" />
-    <link rel="preload" as="image" href="images/whatsapp-icon-white.svg" />
-    <link href="merged-output.css" rel="stylesheet">
+    <head>
+        <link rel="apple-touch-icon"
+            sizes="180x180"
+            href="images/apple-touch-icon.png">
+        <link rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="images/favicon-32x32.png">
+        <link rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="images/favicon-16x16.png">
+        <link rel="manifest"
+            href="images/site.webmanifest">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1" />
+        <link rel="preload"
+            as="image"
+            href="images/new-logo.png" />
+        <link rel="preload"
+            as="image"
+            href="images/about-golfer-portrait.png" />
+        <link rel="preload"
+            as="image"
+            href="images/whatsapp-icon-white.svg" />
+        <link href="merged-output.css"
+            rel="stylesheet">
 
-    <title>True Golf Singapore</title>
+        <title>True Golf Singapore</title>
 
-    <meta property="og:image" content="images/new-logo.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1563">
-    <meta property="og:image:height" content="1563">
-    <meta property="og:description" content="True Golf Singapore offers professional golf instruction with certified coaches. From beginners to advanced players, we help you achieve your golfing goals with personalised training programs.">
+        <meta property="og:image"
+            content="images/new-logo.png">
+        <meta property="og:image:type"
+            content="image/png">
+        <meta property="og:image:width"
+            content="1563">
+        <meta property="og:image:height"
+            content="1563">
+        <meta property="og:description"
+            content="True Golf Singapore offers professional golf instruction with certified coaches. From beginners to advanced players, we help you achieve your golfing goals with personalised training programs.">
 
-</head>
+    </head>
 
-<body>
-    <div class="min-h-screen">
-        <nav class="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center py-4">
-                    <a class="flex items-center gap-3" href="index.html">
-                        <img src="images/new-logo.png" alt="True Golf Singapore" class="h-12 w-12" />
-                        <span class="text-2xl font-bold text-[#073c2f]">True Golf Singapore</span>
-                    </a>
-                    <div class="hidden lg:flex space-x-8 p-4">
-                        <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="index.html">Home</a>
-                        <a class="transition-colors text-[#073c2f] font-medium" href="about.html">About Us</a>
-                        <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="coaches.html">Coaches</a>
-                        <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="rates.html">Rates</a>
-                        <a class="transition-colors text-gray-700 hover:text-[#073c2f]" href="contact.html">Contact</a>
-                    </div>
-                    <div class="hidden md:block">
-                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 bg-[#073c2f] hover:bg-[#073c2f]/90"
-                            href="contact.html">Book a Lesson</a>
-                    </div>
-                    <!-- Language Toggle -->
-                    <div class="relative ml-4 mr-2 md:mr-8">
-                        <button id="lang-toggle-btn"
-                            class="flex items-center gap-2 px-3 py-2 rounded-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-[#073c2f]"
-                            aria-haspopup="true" aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#073c2f]" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <circle cx="12" cy="12" r="10" stroke-width="2" />
-                                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"
-                                    stroke-width="2" />
-                            </svg>
-                            <span id="current-lang">English</span>
-                            <svg class="h-4 w-4 ml-1" fill="none" stroke="currentColor" stroke-width="2"
-                                viewBox="0 0 24 24">
-                                <path d="M6 9l6 6 6-6" />
-                            </svg>
-                        </button>
-                        <div id="lang-dropdown"
-                            class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-50 hidden">
-                            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">English</a>
-                            <a href="about/zh.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">简体中文</a>
-                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Bahasa Malaysia</a>
-                        </div>
-                    </div>
-                    <button
-                        class="lg:hidden p-2 rounded-lg text-gray-700 hover:text-[#073c2f] hover:bg-gray-100 transition-colors md:absolute md:right-2"
-                        aria-label="Toggle menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-menu h-6 w-6">
-                            <line x1="4" x2="20" y1="12" y2="12"></line>
-                            <line x1="4" x2="20" y1="6" y2="6"></line>
-                            <line x1="4" x2="20" y1="18" y2="18"></line>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </nav>
-        <section class="bg-[#073c2f] py-20">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">About True Golf Singapore</h1>
-                    <p class="text-xl text-white max-w-3xl mx-auto mb-8">Play True. Elevate Your Golf.</p>
-                </div>
-            </div>
-        </section>
-        <section class="py-20 bg-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <div class="mb-12">
-                            <div class="flex items-center gap-3 mb-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-eye h-8 w-8 text-[#073c2f]">
-                                    <path
-                                        d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
-                                    </path>
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                </svg>
-                                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Vision Statement</h2>
-                            </div>
-                            <p class="text-lg text-gray-600 leading-relaxed">To be the trusted home for passionate
-                                golfers—where community, innovation, and elite coaching come together to shape confident
-                                players and lifelong lovers of the game.</p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-3 mb-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-target h-8 w-8 text-[#073c2f]">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <circle cx="12" cy="12" r="6"></circle>
-                                    <circle cx="12" cy="12" r="2"></circle>
-                                </svg>
-                                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Mission Statement</h2>
-                            </div>
-                            <p class="text-lg text-gray-600 leading-relaxed">At True Golf Academy, our mission is to
-                                deliver world-class instruction powered by tour-level technology and PGA Tour coaching,
-                                while staying deeply rooted in our community. We are dedicated to developing players of
-                                all ages and abilities through personalised training, mentorship, and a culture that
-                                celebrates growth, integrity, and connection—on and off the course.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="images/about-golfer-portrait.png"
-                            alt="Professional Asian golfer demonstrating perfect swing technique and form"
-                            class="rounded-lg shadow-lg" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-20 bg-gray-50">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <div class="flex items-center justify-center gap-3 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-target h-10 w-10 text-[#073c2f]">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="12" r="6"></circle>
-                            <circle cx="12" cy="12" r="2"></circle>
-                        </svg>
-                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Welcome to the TRUE Method™</h2>
-                    </div>
-                    <p class="text-xl text-gray-600 max-w-4xl mx-auto mb-6">A Smarter, Deeper, More Personal Approach to
-                        Golf Instruction</p>
-                    <p class="text-lg text-gray-600 max-w-4xl mx-auto">At True Golf Academy, we don &#x27;t just teach
-                        swings — we develop players. Rooted in tour-level expertise, cutting-edge technology, and a
-                        passion for community, the TRUE Method™ is our signature approach to unlocking your full
-                        potential on and off the course.</p>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center">
-                        <div class="flex flex-col space-y-1.5 p-6">
-                            <div
-                                class="w-16 h-16 bg-[#073c2f] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                                T</div>
-                            <div class="text-2xl font-semibold leading-none tracking-tight text-[#073c2f]">Tailored
-                                Coaching</div>
-                        </div>
-                        <div class="p-6 pt-0">
-                            <div class="text-sm text-muted-foreground">Personalised development plans based on your
-                                goals, learning style, and experience</div>
-                        </div>
-                    </div>
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center">
-                        <div class="flex flex-col space-y-1.5 p-6">
-                            <div
-                                class="w-16 h-16 bg-[#073c2f] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                                R</div>
-                            <div class="text-2xl font-semibold leading-none tracking-tight text-[#073c2f]">Real-Time
-                                Feedback</div>
-                        </div>
-                        <div class="p-6 pt-0">
-                            <div class="text-sm text-muted-foreground">World-class technology providing instant,
-                                accurate data to accelerate learning</div>
-                        </div>
-                    </div>
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center">
-                        <div class="flex flex-col space-y-1.5 p-6">
-                            <div
-                                class="w-16 h-16 bg-[#073c2f] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                                U</div>
-                            <div class="text-2xl font-semibold leading-none tracking-tight text-[#073c2f]">Understanding
-                                Fundamentals</div>
-                        </div>
-                        <div class="p-6 pt-0">
-                            <div class="text-sm text-muted-foreground">Strong, reliable foundations that hold up under
-                                pressure</div>
-                        </div>
-                    </div>
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center">
-                        <div class="flex flex-col space-y-1.5 p-6">
-                            <div
-                                class="w-16 h-16 bg-[#073c2f] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                                E</div>
-                            <div class="text-2xl font-semibold leading-none tracking-tight text-[#073c2f]">Elevated
-                                Performance</div>
-                        </div>
-                        <div class="p-6 pt-0">
-                            <div class="text-sm text-muted-foreground">Complete players who think clearly, compete
-                                confidently, and manage their game</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-                        <div class="flex flex-col space-y-1.5 p-6">
-                            <div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-users h-5 w-5 text-[#073c2f]">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                                Tailored Coaching
-                            </div>
-                        </div>
-                        <div class="p-6 pt-0">
-                            <p class="text-gray-600">No two golfers are alike — and we don &#x27;t teach them that way.
-                                Every student receives a personalised development plan based on their goals, learning
-                                style, physical ability, and playing experience. We coach the whole player — swing,
-                                mind, and course management.</p>
-                        </div>
-                    </div>
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-                        <div class="flex flex-col space-y-1.5 p-6">
-                            <div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-zap h-5 w-5 text-[#073c2f]">
-                                    <path
-                                        d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
-                                    </path>
-                                </svg>
-                                Real-Time Feedback
-                            </div>
-                        </div>
-                        <div class="p-6 pt-0">
-                            <p class="text-gray-600">Using world-class technology like Foresight Sports GC3, Hack
-                                motion, and video analysis, we give players instant, accurate data to better understand
-                                their game. Feedback becomes learning — fast.</p>
-                        </div>
-                    </div>
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-                        <div class="flex flex-col space-y-1.5 p-6">
-                            <div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-brain h-5 w-5 text-[#073c2f]">
-                                    <path
-                                        d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z">
-                                    </path>
-                                    <path
-                                        d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z">
-                                    </path>
-                                    <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
-                                    <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path>
-                                    <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
-                                    <path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path>
-                                    <path d="M19.938 10.5a4 4 0 0 1 .585.396"></path>
-                                    <path d="M6 18a4 4 0 0 1-1.967-.516"></path>
-                                    <path d="M19.967 17.484A4 4 0 0 1 18 18"></path>
-                                </svg>
-                                Understanding Fundamentals
-                            </div>
-                        </div>
-                        <div class="p-6 pt-0">
-                            <p class="text-gray-600">Mastering golf starts with mastering the basics. We ensure every
-                                student builds strong, reliable foundations — from grip and stance to balance and
-                                alignment — that hold up under pressure.</p>
-                        </div>
-                    </div>
-                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-                        <div class="flex flex-col space-y-1.5 p-6">
-                            <div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-trophy h-5 w-5 text-[#073c2f]">
-                                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                                    <path d="M4 22h16"></path>
-                                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                                    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-                                </svg>
-                                Elevated Performance
-                            </div>
-                        </div>
-                        <div class="p-6 pt-0">
-                            <p class="text-gray-600">Golf is more than just the range. Our players are trained to think
-                                clearly, compete confidently, and manage their game on the course. From juniors to tour
-                                hopefuls, we build complete players who can rise to any occasion.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-20 bg-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <div class="flex items-center justify-center gap-3 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-heart h-8 w-8 text-[#073c2f]">
-                            <path
-                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
-                            </path>
-                        </svg>
-                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Coaching Culture</h2>
-                    </div>
-                    <p class="text-lg text-gray-600 max-w-4xl mx-auto">The TRUE Method™ is about more than mechanics. We
-                        coach with a growth mindset, foster mental toughness, and cultivate a supportive environment
-                        where players are encouraged to take risks, embrace mistakes, and love the journey.</p>
-                </div>
-                <div class="rounded-lg border shadow-sm bg-[#073c2f] text-white">
-                    <div class="flex flex-col space-y-1.5 p-6 text-center">
-                        <div class="font-semibold tracking-tight text-2xl md:text-3xl">True Golf Academy: Where
-                            Community Meets High-Performance</div>
-                    </div>
-                    <div class="p-6 pt-0 text-center">
-                        <p class="text-lg opacity-90 max-w-4xl mx-auto">We &#x27;re proud to blend elite PGA Tour-level
-                            coaching with a welcoming, inclusive culture. From aspiring junior champions to adult
-                            beginners, we build more than golf swings — we build people of character, resilience, and
-                            passion for the game.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-20 bg-[#073c2f]">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <div class="flex items-center justify-center gap-3 mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-award h-10 w-10 text-white">
-                        <path
-                            d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
-                        </path>
-                        <circle cx="12" cy="8" r="6"></circle>
-                    </svg>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white">Ready to Train the TRUE Way?</h2>
-                </div>
-                <p class="text-xl text-white mb-2">Join the academy. Trust the process.</p>
-                <p class="text-2xl font-bold text-white mb-8">Play True. Elevate Your Golf.</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 rounded-md px-8 bg-white text-[#073c2f] hover:bg-gray-100"
-                        href="contact.html">Contact Us to Book an Evaluation</a>
-                    <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border h-11 rounded-md px-8 border-white text-white hover:bg-white hover:text-[#073c2f] bg-transparent"
-                        href="coaches.html">Learn More About Our Coaches</a>
-                </div>
-            </div>
-        </section>
-        <footer class="bg-gray-900 text-white py-12">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">True Golf Singapore</h3>
-                        <p class="text-gray-400">Professional golf instruction in the heart of Singapore. Helping
-                            golfers achieve their potential.</p>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold mb-4">Quick Links</h4>
-                        <div class="space-y-2">
-                            <a class="block text-gray-400 hover:text-white transition-colors" href="about.html">About
-                                Us</a>
-                            <a class="block text-gray-400 hover:text-white transition-colors" href="coaches.html">Our
-                                Coaches</a>
-                            <a class="block text-gray-400 hover:text-white transition-colors"
+    <body>
+        <div class="min-h-screen">
+            <nav class="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex justify-between items-center py-4">
+                        <a class="flex items-center gap-3"
+                            href="index.html">
+                            <img src="images/new-logo.png"
+                                alt="True Golf Singapore"
+                                class="h-12 w-12" />
+                            <span class="text-2xl font-bold text-[#073c2f]">True Golf Singapore</span>
+                        </a>
+                        <div class="hidden lg:flex space-x-8 p-4">
+                            <a class="transition-colors text-gray-700 hover:text-[#073c2f]"
+                                href="index.html">Home</a>
+                            <a class="transition-colors text-[#073c2f] font-medium"
+                                href="about.html">About Us</a>
+                            <a class="transition-colors text-gray-700 hover:text-[#073c2f]"
+                                href="coaches.html">Coaches</a>
+                            <a class="transition-colors text-gray-700 hover:text-[#073c2f]"
                                 href="rates.html">Rates</a>
-                            <a class="block text-gray-400 hover:text-white transition-colors"
+                            <a class="transition-colors text-gray-700 hover:text-[#073c2f]"
                                 href="contact.html">Contact</a>
                         </div>
+                        <div class="hidden md:block">
+                            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 bg-[#073c2f] hover:bg-[#073c2f]/90"
+                                href="contact.html">Book a Lesson</a>
+                        </div>
+                        <!-- Language Toggle -->
+                        <div class="relative ml-4 mr-2 md:mr-8">
+                            <button id="lang-toggle-btn"
+                                class="flex items-center gap-2 px-3 py-2 rounded-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-[#073c2f]"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 text-[#073c2f]"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <circle cx="12"
+                                        cy="12"
+                                        r="10"
+                                        stroke-width="2" />
+                                    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"
+                                        stroke-width="2" />
+                                </svg>
+                                <span id="current-lang">English</span>
+                                <svg class="h-4 w-4 ml-1"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </button>
+                            <div id="lang-dropdown"
+                                class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-50 hidden">
+                                <a href="about.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">English</a>
+                                <a href="about/zh.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">简体中文</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Bahasa Malaysia</a>
+                            </div>
+                        </div>
+                        <button
+                            class="lg:hidden p-2 rounded-lg text-gray-700 hover:text-[#073c2f] hover:bg-gray-100 transition-colors md:absolute md:right-2"
+                            aria-label="Toggle menu">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-menu h-6 w-6">
+                                <line x1="4"
+                                    x2="20"
+                                    y1="12"
+                                    y2="12"></line>
+                                <line x1="4"
+                                    x2="20"
+                                    y1="6"
+                                    y2="6"></line>
+                                <line x1="4"
+                                    x2="20"
+                                    y1="18"
+                                    y2="18"></line>
+                            </svg>
+                        </button>
                     </div>
-                    <div>
-                        <h4 class="font-semibold mb-4">Contact Info</h4>
-                        <div class="space-y-2 text-gray-400">
-                            <div class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-map-pin h-4 w-4">
-                                    <path
-                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                                    </path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                                <span>101 Seletar Club Rd, Singapore 798273</span>
+                </div>
+            </nav>
+            <section class="bg-[#073c2f] py-20">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">About True Golf Singapore</h1>
+                        <p class="text-xl text-white max-w-3xl mx-auto mb-8">Play True. Elevate Your Golf.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 bg-white">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div class="mb-12">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-eye h-8 w-8 text-[#073c2f]">
+                                        <path
+                                            d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+                                        </path>
+                                        <circle cx="12"
+                                            cy="12"
+                                            r="3"></circle>
+                                    </svg>
+                                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Vision Statement</h2>
+                                </div>
+                                <p class="text-lg text-gray-600 leading-relaxed">To be the trusted home for passionate
+                                    golfers—where community, innovation, and elite coaching come together to shape
+                                    confident
+                                    players and lifelong lovers of the game.</p>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-phone h-4 w-4">
-                                    <path
-                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                    </path>
-                                </svg>
-                                <span>+65 9833 3356</span>
+                            <div>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-target h-8 w-8 text-[#073c2f]">
+                                        <circle cx="12"
+                                            cy="12"
+                                            r="10"></circle>
+                                        <circle cx="12"
+                                            cy="12"
+                                            r="6"></circle>
+                                        <circle cx="12"
+                                            cy="12"
+                                            r="2"></circle>
+                                    </svg>
+                                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Mission Statement</h2>
+                                </div>
+                                <p class="text-lg text-gray-600 leading-relaxed">At True Golf Academy, our mission is to
+                                    deliver world-class instruction powered by tour-level technology and PGA Tour
+                                    coaching,
+                                    while staying deeply rooted in our community. We are dedicated to developing players
+                                    of
+                                    all ages and abilities through personalised training, mentorship, and a culture that
+                                    celebrates growth, integrity, and connection—on and off the course.</p>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-e-mail h-4 w-4">
-                                    <path
-                                        d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" />
-                                </svg>
-                                <span>hello@true-golf-singapore.com</span>
+                        </div>
+                        <div>
+                            <img src="images/about-golfer-portrait.png"
+                                alt="Professional Asian golfer demonstrating perfect swing technique and form"
+                                class="rounded-lg shadow-lg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 bg-gray-50">
+                <div class="container flex flex-col justify-center items-center max-w-none mx-20">
+                    <div class="">
+                        <div class="">
+
+                        </div>
+                        <div class="">
+
+                        </div>
+
+                    </div>
+                    <!--grey container -->
+                    <div class="bg-black/10 rounded-2xl m-10 p-10 h-auto flex flex-row max-w-fit">
+                        <!-- TRUE + box-->
+                        <div class="col-auto relative w-fit inline-block">
+                            <div class="text-left">
+                                TRUE
+
+                            </div>
+                            <div class="relative w-fit">
+                                <div
+                                    class="absolute -rotate-6 z-0 bg-black/20 w-[548px] h-[349px] rounded-[2rem] shadow-lg">
+                                </div>
+                                <div
+                                    class="relative z-10 bg-[#F8F7F2] w-[548px] h-[349px] rounded-[2rem] shadow-lg justify-center items-center flex">
+                                    <div
+                                        class="absolute z-0 left-0 top-0 bg-[#083C2F] w-[71px] h-[71px] rounded-xl m-8 flex items-center justify-center">
+                                        <span class="text-white font-bold text-5xl mt-1">T</span>
+
+                                    </div>
+                                    Main
+                                    Content
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- dots-->
+                        <div class="flex flex-col items-center justify-center bg-transparent w-10 m-3">
+                            <button class="w-3 h-3 rounded-full bg-gray-400 mb-2 focus:outline-none "
+                                aria-label="Go to section 1"></button>
+                            <button class="w-3 h-3 rounded-full bg-gray-400 mb-2 focus:outline-none "
+                                aria-label="Go to section 2"></button>
+                            <button class="w-3 h-3 rounded-full bg-white mb-2 focus:outline-none"
+                                aria-label="Go to section 3"></button>
+                            <button class="w-3 h-3 rounded-full bg-gray-400 focus:outline-none "
+                                aria-label="Go to section 4"></button>
+                        </div>
+                        <!-- grass + text-->
+                        <div class="flex flex-col items-center justify-center bg-transparent">
+                            <img src="images/putting-green-4032x3024.jpg"
+                                alt="Professional Asian golfer demonstrating perfect swing technique and form"
+                                class="rounded-lg shadow-lg max-w-lg" />
+                            <p class="text-gray-700 text-sm mt-2">Mastering golf starts with mastering the basics. We
+                                ensure every student builds strong, reliable foundations—from grip and stance to balance
+                                and alignment—that hold up under pressure.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 bg-gray-50">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <div class="flex items-center justify-center gap-3 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-target h-10 w-10 text-[#073c2f]">
+                                <circle cx="12"
+                                    cy="12"
+                                    r="10"></circle>
+                                <circle cx="12"
+                                    cy="12"
+                                    r="6"></circle>
+                                <circle cx="12"
+                                    cy="12"
+                                    r="2"></circle>
+                            </svg>
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Welcome to the TRUE Method™</h2>
+                        </div>
+                        <p class="text-xl text-gray-600 max-w-4xl mx-auto mb-6">A Smarter, Deeper, More Personal
+                            Approach to
+                            Golf Instruction</p>
+                        <p class="text-lg text-gray-600 max-w-4xl mx-auto">At True Golf Academy, we don &#x27;t just
+                            teach
+                            swings — we develop players. Rooted in tour-level expertise, cutting-edge technology, and a
+                            passion for community, the TRUE Method™ is our signature approach to unlocking your full
+                            potential on and off the course.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div
+                                    class="w-16 h-16 bg-[#073c2f] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                                    T</div>
+                                <div class="text-2xl font-semibold leading-none tracking-tight text-[#073c2f]">Tailored
+                                    Coaching</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div class="text-sm text-muted-foreground">Personalised development plans based on your
+                                    goals, learning style, and experience</div>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div
+                                    class="w-16 h-16 bg-[#073c2f] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                                    R</div>
+                                <div class="text-2xl font-semibold leading-none tracking-tight text-[#073c2f]">Real-Time
+                                    Feedback</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div class="text-sm text-muted-foreground">World-class technology providing instant,
+                                    accurate data to accelerate learning</div>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div
+                                    class="w-16 h-16 bg-[#073c2f] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                                    U</div>
+                                <div class="text-2xl font-semibold leading-none tracking-tight text-[#073c2f]">
+                                    Understanding
+                                    Fundamentals</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div class="text-sm text-muted-foreground">Strong, reliable foundations that hold up
+                                    under
+                                    pressure</div>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm text-center">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div
+                                    class="w-16 h-16 bg-[#073c2f] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                                    E</div>
+                                <div class="text-2xl font-semibold leading-none tracking-tight text-[#073c2f]">Elevated
+                                    Performance</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div class="text-sm text-muted-foreground">Complete players who think clearly, compete
+                                    confidently, and manage their game</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-users h-5 w-5 text-[#073c2f]">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9"
+                                            cy="7"
+                                            r="4"></circle>
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                    Tailored Coaching
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <p class="text-gray-600">No two golfers are alike — and we don &#x27;t teach them that
+                                    way.
+                                    Every student receives a personalised development plan based on their goals,
+                                    learning
+                                    style, physical ability, and playing experience. We coach the whole player — swing,
+                                    mind, and course management.</p>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-zap h-5 w-5 text-[#073c2f]">
+                                        <path
+                                            d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                                        </path>
+                                    </svg>
+                                    Real-Time Feedback
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <p class="text-gray-600">Using world-class technology like Foresight Sports GC3, Hack
+                                    motion, and video analysis, we give players instant, accurate data to better
+                                    understand
+                                    their game. Feedback becomes learning — fast.</p>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-brain h-5 w-5 text-[#073c2f]">
+                                        <path
+                                            d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z">
+                                        </path>
+                                        <path
+                                            d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z">
+                                        </path>
+                                        <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
+                                        <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path>
+                                        <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
+                                        <path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path>
+                                        <path d="M19.938 10.5a4 4 0 0 1 .585.396"></path>
+                                        <path d="M6 18a4 4 0 0 1-1.967-.516"></path>
+                                        <path d="M19.967 17.484A4 4 0 0 1 18 18"></path>
+                                    </svg>
+                                    Understanding Fundamentals
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <p class="text-gray-600">Mastering golf starts with mastering the basics. We ensure
+                                    every
+                                    student builds strong, reliable foundations — from grip and stance to balance and
+                                    alignment — that hold up under pressure.</p>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-trophy h-5 w-5 text-[#073c2f]">
+                                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                                        <path d="M4 22h16"></path>
+                                        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                                        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                                    </svg>
+                                    Elevated Performance
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <p class="text-gray-600">Golf is more than just the range. Our players are trained to
+                                    think
+                                    clearly, compete confidently, and manage their game on the course. From juniors to
+                                    tour
+                                    hopefuls, we build complete players who can rise to any occasion.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                    <p>© 2025 True Golf Singapore. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="fixed top-0 left-0 right-0 z-50 lg:hidden hidden"
-            style="background: rgba(255,255,255,0.97);">
-            <div class="w-full bg-white rounded-b-lg shadow-lg flex flex-col px-4 pb-4 pt-2">
-                <div class="flex items-center justify-between px-2 py-5 border-b">
-                    <a class="flex items-center gap-3" href="about.html">
-                        <img src="images/new-logo.png" alt="True Golf Singapore" class="h-10 w-10" />
-                        <span class="text-2xl font-bold text-[#073c2f]">True Golf Singapore</span>
-                    </a>
-                    <button id="close-mobile-menu"
-                        class="p-2 rounded-md text-gray-700 hover:text-[#073c2f] hover:bg-gray-100 transition-colors"
-                        aria-label="Close menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" stroke-width="2">
-                            <line x1="18" y1="6" x2="6" y2="18" />
-                            <line x1="6" y1="6" x2="18" y2="18" />
-                        </svg>
-                    </button>
-                </div>
-                <nav class="flex flex-col gap-1 mt-2">
-                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
-                        href="index.html">Home</a>
-                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-[#073c2f] bg-green-50"
-                        href="about.html">About Us</a>
-                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
-                        href="coaches.html">Coaches</a>
-                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
-                        href="rates.html">Rates</a>
-                    <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
-                        href="contact.html">Contact</a>
-                    <div class="px-3 py-2">
-                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 w-full bg-[#073c2f] hover:bg-[#073c2f]/90"
-                            href="contact.html">Book a Lesson</a>
+            </section>
+
+
+
+            <!-- Coaching Culture Section -->
+            <section class="py-20 bg-white">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <div class="flex items-center justify-center gap-3 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-heart h-8 w-8 text-[#073c2f]">
+                                <path
+                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                </path>
+                            </svg>
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Coaching Culture</h2>
+                        </div>
+                        <p class="text-lg text-gray-600 max-w-4xl mx-auto">The TRUE Method™ is about more than
+                            mechanics. We
+                            coach with a growth mindset, foster mental toughness, and cultivate a supportive environment
+                            where players are encouraged to take risks, embrace mistakes, and love the journey.</p>
                     </div>
-                </nav>
-            </div>
-        </div>
-        <a href="https://wa.me/6598333356" target="_blank" rel="noopener noreferrer"
-            class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20b858] rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
-            aria-label="Contact us on WhatsApp">
-            <div class="w-12 h-12 flex items-center justify-center">
-                <img src="images/whatsapp-icon-white.svg" alt="WhatsApp" class="w-8 h-8" />
-            </div>
-            <div
-                class="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                Chat with us on WhatsApp<div
-                    class="absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-gray-800">
+                    <div class="rounded-lg border shadow-sm bg-[#073c2f] text-white">
+                        <div class="flex flex-col space-y-1.5 p-6 text-center">
+                            <div class="font-semibold tracking-tight text-2xl md:text-3xl">True Golf Academy: Where
+                                Community Meets High-Performance</div>
+                        </div>
+                        <div class="p-6 pt-0 text-center">
+                            <p class="text-lg opacity-90 max-w-4xl mx-auto">We &#x27;re proud to blend elite PGA
+                                Tour-level
+                                coaching with a welcoming, inclusive culture. From aspiring junior champions to adult
+                                beginners, we build more than golf swings — we build people of character, resilience,
+                                and
+                                passion for the game.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 bg-[#073c2f]">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <div class="flex items-center justify-center gap-3 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-award h-10 w-10 text-white">
+                            <path
+                                d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+                            </path>
+                            <circle cx="12"
+                                cy="8"
+                                r="6"></circle>
+                        </svg>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">Ready to Train the TRUE Way?</h2>
+                    </div>
+                    <p class="text-xl text-white mb-2">Join the academy. Trust the process.</p>
+                    <p class="text-2xl font-bold text-white mb-8">Play True. Elevate Your Golf.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 rounded-md px-8 bg-white text-[#073c2f] hover:bg-gray-100"
+                            href="contact.html">Contact Us to Book an Evaluation</a>
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border h-11 rounded-md px-8 border-white text-white hover:bg-white hover:text-[#073c2f] bg-transparent"
+                            href="coaches.html">Learn More About Our Coaches</a>
+                    </div>
+                </div>
+            </section>
+            <footer class="bg-gray-900 text-white py-12">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">True Golf Singapore</h3>
+                            <p class="text-gray-400">Professional golf instruction in the heart of Singapore. Helping
+                                golfers achieve their potential.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-4">Quick Links</h4>
+                            <div class="space-y-2">
+                                <a class="block text-gray-400 hover:text-white transition-colors"
+                                    href="about.html">About
+                                    Us</a>
+                                <a class="block text-gray-400 hover:text-white transition-colors"
+                                    href="coaches.html">Our
+                                    Coaches</a>
+                                <a class="block text-gray-400 hover:text-white transition-colors"
+                                    href="rates.html">Rates</a>
+                                <a class="block text-gray-400 hover:text-white transition-colors"
+                                    href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-4">Contact Info</h4>
+                            <div class="space-y-2 text-gray-400">
+                                <div class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-map-pin h-4 w-4">
+                                        <path
+                                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                        </path>
+                                        <circle cx="12"
+                                            cy="10"
+                                            r="3"></circle>
+                                    </svg>
+                                    <span>101 Seletar Club Rd, Singapore 798273</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-phone h-4 w-4">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                    <span>+65 9833 3356</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-e-mail h-4 w-4">
+                                        <path
+                                            d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" />
+                                    </svg>
+                                    <span>hello@true-golf-singapore.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                        <p>© 2025 True Golf Singapore. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="fixed top-0 left-0 right-0 z-50 lg:hidden hidden"
+                style="background: rgba(255,255,255,0.97);">
+                <div class="w-full bg-white rounded-b-lg shadow-lg flex flex-col px-4 pb-4 pt-2">
+                    <div class="flex items-center justify-between px-2 py-5 border-b">
+                        <a class="flex items-center gap-3"
+                            href="about.html">
+                            <img src="images/new-logo.png"
+                                alt="True Golf Singapore"
+                                class="h-10 w-10" />
+                            <span class="text-2xl font-bold text-[#073c2f]">True Golf Singapore</span>
+                        </a>
+                        <button id="close-mobile-menu"
+                            class="p-2 rounded-md text-gray-700 hover:text-[#073c2f] hover:bg-gray-100 transition-colors"
+                            aria-label="Close menu">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="28"
+                                height="28"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="18"
+                                    y1="6"
+                                    x2="6"
+                                    y2="18" />
+                                <line x1="6"
+                                    y1="6"
+                                    x2="18"
+                                    y2="18" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="flex flex-col gap-1 mt-2">
+                        <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
+                            href="index.html">Home</a>
+                        <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-[#073c2f] bg-green-50"
+                            href="about.html">About Us</a>
+                        <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
+                            href="coaches.html">Coaches</a>
+                        <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
+                            href="rates.html">Rates</a>
+                        <a class="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-[#073c2f] hover:bg-gray-50"
+                            href="contact.html">Contact</a>
+                        <div class="px-3 py-2">
+                            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 w-full bg-[#073c2f] hover:bg-[#073c2f]/90"
+                                href="contact.html">Book a Lesson</a>
+                        </div>
+                    </nav>
                 </div>
             </div>
-        </a>
-        <script>
-            const btn = document.querySelector('.lg\\:hidden[aria-label="Toggle menu"]');
-            const menu = document.getElementById('mobile-menu');
-            const closeBtn = document.getElementById('close-mobile-menu');
-            btn.addEventListener('click', () => {
-                menu.classList.remove('hidden');
-            });
-            closeBtn.addEventListener('click', () => {
-                menu.classList.add('hidden');
-            });
-            // Language Toggle
-            const langBtn = document.getElementById('lang-toggle-btn');
-            const langDropdown = document.getElementById('lang-dropdown');
-            langBtn.addEventListener('click', function (e) {
-                e.stopPropagation();
-                langDropdown.classList.toggle('hidden');
-                langBtn.setAttribute('aria-expanded', langDropdown.classList.contains('hidden') ? 'false' : 'true');
-            });
-            document.addEventListener('click', function (e) {
-                if (!langDropdown.classList.contains('hidden')) {
-                    langDropdown.classList.add('hidden');
-                    langBtn.setAttribute('aria-expanded', 'false');
-                }
-            });
-            langDropdown.addEventListener('click', function (e) {
-                e.stopPropagation();
-            });
-        </script>
-    </div>
-</body>
+            <a href="https://wa.me/6598333356"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20b858] rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
+                aria-label="Contact us on WhatsApp">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="images/whatsapp-icon-white.svg"
+                        alt="WhatsApp"
+                        class="w-8 h-8" />
+                </div>
+                <div
+                    class="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    Chat with us on WhatsApp<div
+                        class="absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-gray-800">
+                    </div>
+                </div>
+            </a>
+            <script>
+                const btn = document.querySelector('.lg\\:hidden[aria-label="Toggle menu"]');
+                const menu = document.getElementById('mobile-menu');
+                const closeBtn = document.getElementById('close-mobile-menu');
+                btn.addEventListener('click', () => {
+                    menu.classList.remove('hidden');
+                });
+                closeBtn.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+                // Language Toggle
+                const langBtn = document.getElementById('lang-toggle-btn');
+                const langDropdown = document.getElementById('lang-dropdown');
+                langBtn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    langDropdown.classList.toggle('hidden');
+                    langBtn.setAttribute('aria-expanded', langDropdown.classList.contains('hidden') ? 'false' : 'true');
+                });
+                document.addEventListener('click', function (e) {
+                    if (!langDropdown.classList.contains('hidden')) {
+                        langDropdown.classList.add('hidden');
+                        langBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+                langDropdown.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            </script>
+        </div>
+    </body>
 
 </html>
 <!DOCTYPE html>
