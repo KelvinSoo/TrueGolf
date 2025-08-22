@@ -282,39 +282,48 @@
                             <div class="relative w-fit">
                                 <div class="text-left text-2xl font-bold mb-10 font-inter tracking-tight ">
                                     T.R.U.E.
-
                                 </div>
-                                <div
-                                    class="absolute -rotate-6 z-0 bg-black/20 xl:w-[440px] 2xl:w-[550px] h-auto aspect-[550/350] rounded-[2rem] shadow-lg">
-                                </div>
-                                <div
-                                    class="relative flex-col z-10 bg-[#F8F7F2] xl:w-[440px] 2xl:w-[550px] h-auto aspect-[550/350] rounded-[2rem] shadow-lg justify-center items-center flex">
+                                <div id="TrueCard"
+                                    class="relative w-fit translate-y-0 transition-all ease-in-out opacity-100 duration-500 ">
                                     <div
-                                        class="absolute z-0 left-0 top-0 bg-[#083C2F] xl:w-[56px] 2xl:w-[71px] h-auto aspect-square rounded-xl m-8 flex items-center justify-center">
-                                        <span class="text-white font-bold xl:text-4xl 2xl:text-5xl mt-1">T</span>
-
+                                        class="absolute -rotate-6 z-0 bg-black/20 xl:w-[440px] 2xl:w-[550px] h-auto aspect-[550/350] rounded-[2rem] shadow-lg">
                                     </div>
-                                    <div class="justify-center items-center text-center flex flex-col">
-                                        <p class="text-gray-700 font-bold text-2xl self-center max-w-36">
-                                            Real-time Feedback
-                                        </p>
-                                        <p class="text-black/50 text-md self-center max-w-xs">
-                                            World-class technology providing instant,
-                                            accurate data to accelerate learning
-                                        </p>
+                                    <div
+                                        class="relative flex-col z-10 bg-[#F8F7F2] xl:w-[440px] 2xl:w-[550px] h-auto aspect-[550/350] rounded-[2rem] shadow-lg justify-center items-center flex">
+                                        <div
+                                            class="absolute z-0 left-0 top-0 bg-[#083C2F] xl:w-[56px] 2xl:w-[71px] h-auto aspect-square rounded-xl m-8 flex items-center justify-center">
+                                            <span id="TrueCardLetter"
+                                                class="text-white font-bold xl:text-4xl 2xl:text-5xl mt-1">T</span>
+
+                                        </div>
+                                        <div class="justify-center items-center text-center flex flex-col">
+                                            <p id="TrueCardTitle"
+                                                class="text-gray-700 font-bold text-2xl self-center max-w-36">
+                                                Tailored
+                                                Coaching
+                                            </p>
+                                            <p id="TrueCardDescription"
+                                                class="text-black/50 text-md self-center max-w-xs">
+                                                World-class technology providing instant,
+                                                accurate data to accelerate learning
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
                             <!-- dots-->
                             <div class="flex flex-col items-center justify-center bg-transparent ml-12 m-3">
-                                <button class="w-2.5 h-2.5 rounded-full bg-white mb-1.5 focus:outline-none"
+                                <button id="dot-btn-1"
+                                    class="w-2.5 h-2.5 rounded-full bg-white mb-1.5 focus:outline-none"
                                     aria-label="Go to section 1"></button>
-                                <button class="w-2.5 h-2.5 rounded-full bg-gray-400 mb-1.5 focus:outline-none "
+                                <button id="dot-btn-2"
+                                    class="w-2.5 h-2.5 rounded-full bg-gray-400 mb-1.5 focus:outline-none "
                                     aria-label="Go to section 2"></button>
-                                <button class="w-2.5 h-2.5 rounded-full bg-gray-400 mb-1.5 focus:outline-none "
+                                <button id="dot-btn-3"
+                                    class="w-2.5 h-2.5 rounded-full bg-gray-400 mb-1.5 focus:outline-none "
                                     aria-label="Go to section 3"></button>
-                                <button class="w-2.5 h-2.5 rounded-full bg-gray-400 focus:outline-none "
+                                <button id="dot-btn-4"
+                                    class="w-2.5 h-2.5 rounded-full bg-gray-400 focus:outline-none "
                                     aria-label="Go to section 4"></button>
                             </div>
                             <!-- grass + text-->
@@ -372,19 +381,19 @@
                         </div>
                         <div class="">
                             <div class="flex flex-col gap-2 2xl:gap-4 w-full 2xl:max-w-xl max-w-lg mx-auto">
-                                <button
+                                <button id="dot-btn-1"
                                     class="rounded-full border border-gray-300 bg-[#F8F7F2] text-gray-300 text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none"
                                     aria-label="Coach Growth Mindset">
                                     Coach Growth Mindset</button>
-                                <button
+                                <button id="dot-btn-2"
                                     class="rounded-full border border-[#083C2F] bg-white text-[#222] text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none shadow-sm"
                                     aria-label="Foster Mental Toughness">
                                     Foster Mental Toughness</button>
-                                <button
+                                <button id="dot-btn-3"
                                     class="rounded-full border border-gray-300 bg-[#F8F7F2] text-gray-300 text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none"
                                     aria-label="Cultivate Supportive Environment">
                                     Cultivate Supportive Environment</button>
-                                <button
+                                <button id="dot-btn-4"
                                     class="rounded-full border border-gray-300 bg-[#F8F7F2] text-gray-300 text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none"
                                     aria-label="Encourage risk-taking">
                                     Encourage risk-taking</button>
@@ -583,6 +592,69 @@
                 </div>
             </a>
             <script>
+                // Dot button toggle logic
+                const dotButtons = [
+                    document.getElementById('dot-btn-1'),
+                    document.getElementById('dot-btn-2'),
+                    document.getElementById('dot-btn-3'),
+                    document.getElementById('dot-btn-4')
+                ];
+                const card = document.getElementById('TrueCard');
+                const cardLetter = document.getElementById('TrueCardLetter');
+                const cardTitle = document.getElementById('TrueCardTitle');
+                const cardDesc = document.getElementById('TrueCardDescription');
+
+                const cardData = [
+                    {
+                        letter: "T",
+                        title: "Tailored Coaching",
+                        desc: "Personalised development plans based on your goals, learning style, and experience"
+                    },
+                    {
+                        letter: "R",
+                        title: "Real-time Feedback",
+                        desc: "World-class technology providing instant, accurate data to accelerate learning"
+                    },
+                    {
+                        letter: "U",
+                        title: "Understanding Fundamentals",
+                        desc: "Strong, reliable foundations that hold up under pressure"
+                    },
+                    {
+                        letter: "E",
+                        title: "Elevated Performance",
+                        desc: "Complete players who think clearly, compete confidently, and manage their game"
+                    }
+                ];
+
+                function setActiveDot(idx) {
+                    dotButtons.forEach((btn, i) => {
+                        btn.classList.remove('bg-white', 'bg-gray-400');
+                        if (i === idx) {
+                            btn.classList.add('bg-white');
+                        } else {
+                            btn.classList.add('bg-gray-400');
+                        }
+                    });
+                }
+
+                dotButtons.forEach((btn, idx) => {
+                    btn.addEventListener('click', function () {
+                        // Animate out
+                        card.classList.remove('opacity-100', 'translate-y-0');
+                        card.classList.add('opacity-0', 'translate-y-8');
+                        setActiveDot(idx);
+                        setTimeout(() => {
+                            cardLetter.textContent = cardData[idx].letter;
+                            cardTitle.textContent = cardData[idx].title;
+                            cardDesc.textContent = cardData[idx].desc;
+                            card.classList.remove('opacity-0', 'translate-y-8');
+                            card.classList.add('opacity-100', 'translate-y-0');
+                        }, 500);
+                    });
+                });
+                // Set initial active dot
+                setActiveDot(0);
                 const btn = document.querySelector('.lg\\:hidden[aria-label="Toggle menu"]');
                 const menu = document.getElementById('mobile-menu');
                 const closeBtn = document.getElementById('close-mobile-menu');
