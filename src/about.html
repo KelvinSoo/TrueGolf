@@ -653,12 +653,13 @@
                         }, 500);
                     });
                 });
-                // Set initial active dot
                 setActiveDot(0);
-                const btn = document.querySelector('.lg\\:hidden[aria-label="Toggle menu"]');
+
+                // Mobile menu
+                const burgerButton = document.querySelector('.lg\\:hidden[aria-label="Toggle menu"]');
                 const menu = document.getElementById('mobile-menu');
                 const closeBtn = document.getElementById('close-mobile-menu');
-                btn.addEventListener('click', () => {
+                burgerButton.addEventListener('click', () => {
                     menu.classList.remove('hidden');
                 });
                 closeBtn.addEventListener('click', () => {
