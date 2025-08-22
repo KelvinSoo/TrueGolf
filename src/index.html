@@ -50,6 +50,35 @@
     </head>
 
     <body>
+        <!-- Poster Overlay Modal (First Visit Only) -->
+        <div id="poster-overlay"
+            class="hidden fixed inset-0 z-[100] justify-center items-center bg-black/85 backdrop-blur-sm">
+            <div class="relative max-w-[95vw] max-h-[95vh] flex flex-col items-center m-24">
+                <img src="../src/images/poster.jpg"
+                    alt="Grand Opening Poster"
+                    class="max-w-[90vw] max-h-[80vh] rounded-2xl shadow-2xl bg-white" />
+                <button id="close-poster-overlay"
+                    class="absolute top-2 right-2 w-12 h-12 flex items-center justify-center rounded-full bg-[#083C2F] text-white hover:bg-[#0a4d3c] transition-colors shadow-md focus:outline-none focus:ring-2 focus:ring-white border border-white"
+                    aria-label="Close poster overlay">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-8 h-8"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2">
+                        <line x1="18"
+                            y1="6"
+                            x2="6"
+                            y2="18" />
+                        <line x1="6"
+                            y1="6"
+                            x2="18"
+                            y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
         <div class="min-h-screen">
             <!-- Navigation Bar -->
             <nav class="border-b bg-[#F8F7F2] backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
@@ -499,6 +528,21 @@
             </a>
             <!-- JavaScript for Mobile Menu and Language Toggle -->
             <script>
+                // Poster Overlay Logic (Tailwind)
+                (function () {
+                    const overlay = document.getElementById('poster-overlay');
+                    const closeBtn = document.getElementById('close-poster-overlay');
+                    if (!localStorage.getItem('tg_poster_seen')) {
+                        overlay.classList.remove('hidden');
+                        document.body.style.overflow = 'hidden';
+                    }
+                    closeBtn.addEventListener('click', function () {
+                        overlay.classList.add('hidden');
+                        document.body.style.overflow = '';
+                        localStorage.setItem('tg_poster_seen', '1');
+                    });
+                })();
+                // Mobile Menu
                 const btn = document.querySelector('.lg\\:hidden[aria-label="Toggle menu"]');
                 const menu = document.getElementById('mobile-menu');
                 const closeBtn = document.getElementById('close-mobile-menu');
