@@ -327,7 +327,7 @@
                                     alt="Professional Asian golfer demonstrating perfect swing technique and form"
                                     class=" rounded-[40px] xl:w-[570px] 2xl:w-[713px] h-auto aspect-[713/398] object-cover" />
                                 <p id="TrueCardDescription2"
-                                    class="flex text-gray-700 tracking-wide text-sm 2xl:text-lg mt-4 xl:w-[541px] 2xl:w-[676px] object-right w-fit -mr-8 xl:h-20 2xl:h-28">
+                                    class="flex text-gray-700 tracking-wide text-sm 2xl:text-lg mt-4 xl:w-[541px] 2xl:w-[676px] object-right w-fit -mr-8 xl:h-[4.5rem] 2xl:h-28">
                                     No two golfers are alike — and we don 't teach them that way. Every student receives
                                     a personalised development plan based on their goals, learning style, physical
                                     ability, and playing experience. We coach the whole player — swing, mind, and course
@@ -377,11 +377,11 @@
                         <div class="">
                             <div class="flex flex-col gap-2 2xl:gap-4 w-full 2xl:max-w-xl max-w-lg mx-auto">
                                 <button id="coach-btn-1"
-                                    class="coach-toggle-btn rounded-full border border-gray-300 bg-[#F8F7F2] text-gray-300 text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none"
+                                    class="coach-toggle-btn rounded-full border border-[#083C2F] bg-white text-black/70 text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none shadow-sm"
                                     aria-label="Coach Growth Mindset">
                                     Coach Growth Mindset</button>
                                 <button id="coach-btn-2"
-                                    class="coach-toggle-btn rounded-full border border-[#083C2F] bg-white text-[#222] text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none shadow-sm"
+                                    class="coach-toggle-btn rounded-full border border-gray-300 bg-[#F8F7F2] text-gray-300 text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none"
                                     aria-label="Foster Mental Toughness">
                                     Foster Mental Toughness</button>
                                 <button id="coach-btn-3"
@@ -595,13 +595,13 @@
                     document.getElementById('coach-btn-3'),
                     document.getElementById('coach-btn-4')
                 ];
-                let activeCoachIdx = 1; // Default active (second button)
+                let activeCoachIdx = 0;
                 function setActiveCoachBtn(idx) {
                     coachBtns.forEach((btn, i) => {
-                        btn.classList.remove('border-[#083C2F]', 'bg-white', 'text-[#222]', 'shadow-sm');
+                        btn.classList.remove('border-[#083C2F]', 'bg-white', 'text-black/70', 'shadow-sm');
                         btn.classList.remove('border-gray-300', 'bg-[#F8F7F2]', 'text-gray-300');
                         if (i === idx) {
-                            btn.classList.add('border-[#083C2F]', 'bg-white', 'text-[#222]', 'shadow-sm');
+                            btn.classList.add('border-[#083C2F]', 'bg-white', 'text-black/70', 'shadow-sm');
                         } else {
                             btn.classList.add('border-gray-300', 'bg-[#F8F7F2]', 'text-gray-300');
                         }
