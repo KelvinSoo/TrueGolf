@@ -31,11 +31,6 @@
             rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
             rel="stylesheet">
-        <style>
-            .font-inter {
-                font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            }
-        </style>
 
         <title>True Golf Singapore</title>
 
@@ -268,7 +263,7 @@
                             </span>
                         </div>
                         <div
-                            class="flex text-sm 2xl:text-lg text-left tracking-wide text-black/50 max-w-[544px] 2xl:max-w-[681px]">
+                            class="flex text-sm 2xl:text-lg text-left tracking-wide text-black/50 max-w-[540px] 2xl:max-w-[681px] mr-2">
                             At True Golf Academy, we don't just teach swings—we develop players. Rooted in tour-level
                             expertise, cutting-edge technology, and a passion for community, the TRUE Method™ is our
                             signature approach to unlocking your full potential on and off the course.
@@ -276,7 +271,7 @@
 
                     </div>
                     <!--grey container -->
-                    <div class="bg-black/10 rounded-[40px] p-10 pr-20 pl-20 -mx-10">
+                    <div class="bg-black/10 rounded-[40px] p-10 pr-16 pl-20 -mx-14">
                         <div class="flex flex-row relative justify-between w-full">
                             <!-- TRUE + box-->
                             <div class="relative w-fit">
@@ -293,26 +288,26 @@
                                         <div
                                             class="absolute z-0 left-0 top-0 bg-[#083C2F] xl:w-[56px] 2xl:w-[71px] h-auto aspect-square rounded-xl m-8 flex items-center justify-center">
                                             <span id="TrueCardLetter"
-                                                class="text-white font-bold xl:text-4xl 2xl:text-5xl mt-1">T</span>
+                                                class="text-white font-bold xl:text-4xl 2xl:text-5xl mt-[2px]">T</span>
 
                                         </div>
-                                        <div class="justify-center items-center text-center flex flex-col">
+                                        <div class="justify-center items-center text-center flex flex-col mt-4">
                                             <p id="TrueCardTitle"
-                                                class="text-gray-700 font-bold text-2xl self-center max-w-36">
+                                                class="text-gray-700 font-bold leading-none text-2xl xl:max-w-44">
                                                 Tailored
                                                 Coaching
                                             </p>
                                             <p id="TrueCardDescription"
-                                                class="text-black/50 text-md self-center max-w-xs">
-                                                World-class technology providing instant,
-                                                accurate data to accelerate learning
+                                                class="text-black/50 text-md self-center max-w-xs mt-2">
+                                                Personalised development plans based on your goals, learning style, and
+                                                experience
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- dots-->
-                            <div class="flex flex-col items-center justify-center bg-transparent ml-12 m-3">
+                            <div class="flex flex-col items-center justify-center bg-transparent ml-6 mx-3 my-auto">
                                 <button id="dot-btn-1"
                                     class="w-2.5 h-2.5 rounded-full bg-white mb-1.5 focus:outline-none"
                                     aria-label="Go to section 1"></button>
@@ -327,12 +322,12 @@
                                     aria-label="Go to section 4"></button>
                             </div>
                             <!-- grass + text-->
-                            <div class="flex flex-col items-center justify-center bg-transparent pt-4">
+                            <div class="flex flex-col items-center bg-transparent pt-4">
                                 <img src="images/putting-green-4032x3024.jpg"
                                     alt="Professional Asian golfer demonstrating perfect swing technique and form"
-                                    class=" rounded-[40px] xl:w-[500px] 2xl:w-[713px] h-auto aspect-[713/398] object-cover" />
-                                <p
-                                    class="flex mx-auto text-gray-700 text-sm mt-4 max-w-md 2xl:max-w-lg items-center w-fit">
+                                    class=" rounded-[40px] xl:w-[570px] 2xl:w-[713px] h-auto aspect-[713/398] object-cover" />
+                                <p id="TrueCardDescription2"
+                                    class="flex text-gray-700 tracking-wide text-sm 2xl:text-lg mt-4 xl:w-[541px] 2xl:w-[676px] object-right w-fit -mr-8 xl:h-20 2xl:h-28">
                                     No two golfers are alike — and we don 't teach them that way. Every student receives
                                     a personalised development plan based on their goals, learning style, physical
                                     ability, and playing experience. We coach the whole player — swing, mind, and course
@@ -359,7 +354,7 @@
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    class="lucide lucide-heart h-8 w-8 text-[#083C2F]">
+                                    class="lucide lucide-heart h-6 w-6 2xl:h-8 2xl:w-8 text-[#083C2F]">
                                     <path
                                         d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
                                     </path>
@@ -381,20 +376,20 @@
                         </div>
                         <div class="">
                             <div class="flex flex-col gap-2 2xl:gap-4 w-full 2xl:max-w-xl max-w-lg mx-auto">
-                                <button id="dot-btn-1"
-                                    class="rounded-full border border-gray-300 bg-[#F8F7F2] text-gray-300 text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none"
+                                <button id="coach-btn-1"
+                                    class="coach-toggle-btn rounded-full border border-gray-300 bg-[#F8F7F2] text-gray-300 text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none"
                                     aria-label="Coach Growth Mindset">
                                     Coach Growth Mindset</button>
-                                <button id="dot-btn-2"
-                                    class="rounded-full border border-[#083C2F] bg-white text-[#222] text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none shadow-sm"
+                                <button id="coach-btn-2"
+                                    class="coach-toggle-btn rounded-full border border-[#083C2F] bg-white text-[#222] text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none shadow-sm"
                                     aria-label="Foster Mental Toughness">
                                     Foster Mental Toughness</button>
-                                <button id="dot-btn-3"
-                                    class="rounded-full border border-gray-300 bg-[#F8F7F2] text-gray-300 text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none"
+                                <button id="coach-btn-3"
+                                    class="coach-toggle-btn rounded-full border border-gray-300 bg-[#F8F7F2] text-gray-300 text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none"
                                     aria-label="Cultivate Supportive Environment">
                                     Cultivate Supportive Environment</button>
-                                <button id="dot-btn-4"
-                                    class="rounded-full border border-gray-300 bg-[#F8F7F2] text-gray-300 text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none"
+                                <button id="coach-btn-4"
+                                    class="coach-toggle-btn rounded-full border border-gray-300 bg-[#F8F7F2] text-gray-300 text-md 2xl:text-xl font-medium py-2.5 2xl:py-4 text-center select-none"
                                     aria-label="Encourage risk-taking">
                                     Encourage risk-taking</button>
                             </div>
@@ -574,6 +569,7 @@
                     </nav>
                 </div>
             </div>
+
             <a href="https://wa.me/6598333356"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -592,6 +588,37 @@
                 </div>
             </a>
             <script>
+                // Coaching Culture Toggle Logic
+                const coachBtns = [
+                    document.getElementById('coach-btn-1'),
+                    document.getElementById('coach-btn-2'),
+                    document.getElementById('coach-btn-3'),
+                    document.getElementById('coach-btn-4')
+                ];
+                let activeCoachIdx = 1; // Default active (second button)
+                function setActiveCoachBtn(idx) {
+                    coachBtns.forEach((btn, i) => {
+                        btn.classList.remove('border-[#083C2F]', 'bg-white', 'text-[#222]', 'shadow-sm');
+                        btn.classList.remove('border-gray-300', 'bg-[#F8F7F2]', 'text-gray-300');
+                        if (i === idx) {
+                            btn.classList.add('border-[#083C2F]', 'bg-white', 'text-[#222]', 'shadow-sm');
+                        } else {
+                            btn.classList.add('border-gray-300', 'bg-[#F8F7F2]', 'text-gray-300');
+                        }
+                    });
+                    activeCoachIdx = idx;
+                }
+                // Set initial state
+                setActiveCoachBtn(activeCoachIdx);
+                // Hover or click: both set active
+                coachBtns.forEach((btn, idx) => {
+                    btn.addEventListener('mouseenter', function () {
+                        setActiveCoachBtn(idx);
+                    });
+                    btn.addEventListener('click', function () {
+                        setActiveCoachBtn(idx);
+                    });
+                });
                 // Dot button toggle logic
                 const dotButtons = [
                     document.getElementById('dot-btn-1'),
@@ -603,27 +630,32 @@
                 const cardLetter = document.getElementById('TrueCardLetter');
                 const cardTitle = document.getElementById('TrueCardTitle');
                 const cardDesc = document.getElementById('TrueCardDescription');
+                const cardDesc2 = document.getElementById('TrueCardDescription2');
 
                 const cardData = [
                     {
                         letter: "T",
                         title: "Tailored Coaching",
-                        desc: "Personalised development plans based on your goals, learning style, and experience"
+                        desc: "Personalised development plans based on your goals, learning style, and experience",
+                        desc2: "No two golfers are alike — and we don 't teach them that way. Every student receives a personalised development plan based on their goals, learning style, physical ability, and playing experience. We coach the whole player — swing, mind, and course management."
                     },
                     {
                         letter: "R",
                         title: "Real-time Feedback",
-                        desc: "World-class technology providing instant, accurate data to accelerate learning"
+                        desc: "World-class technology providing instant, accurate data to accelerate learning",
+                        desc2: "Using world-class technology like Foresight Sports GC3, Hack motion, and video analysis, we give players instant, accurate data to better understand their game. Feedback becomes learning—fast."
                     },
                     {
                         letter: "U",
                         title: "Understanding Fundamentals",
-                        desc: "Strong, reliable foundations that hold up under pressure"
+                        desc: "Strong, reliable foundations that hold up under pressure",
+                        desc2: "Mastering golf starts with mastering the basics. We ensure every student builds strong, reliable foundations—from grip and stance to balance and alignment—that hold up under pressure."
                     },
                     {
                         letter: "E",
                         title: "Elevated Performance",
-                        desc: "Complete players who think clearly, compete confidently, and manage their game"
+                        desc: "Complete players who think clearly, compete confidently, and manage their game",
+                        desc2: "Golf is more than just the range. Our players are trained to think clearly, compete confidently, and manage their game on the course. From juniors to tour hopefuls, we build complete players who can rise to any occasion."
                     }
                 ];
 
@@ -644,6 +676,7 @@
                         card.classList.remove('opacity-100', 'translate-y-0');
                         card.classList.add('opacity-0', 'translate-y-8');
                         setActiveDot(idx);
+                        cardDesc2.textContent = cardData[idx].desc2;
                         setTimeout(() => {
                             cardLetter.textContent = cardData[idx].letter;
                             cardTitle.textContent = cardData[idx].title;
@@ -665,6 +698,7 @@
                 closeBtn.addEventListener('click', () => {
                     menu.classList.add('hidden');
                 });
+
                 // Language Toggle
                 const langBtn = document.getElementById('lang-toggle-btn');
                 const langDropdown = document.getElementById('lang-dropdown');
