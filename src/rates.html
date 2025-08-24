@@ -47,6 +47,7 @@
 
     <body>
         <div class="min-h-screen">
+            <!-- Navbar -->
             <nav class="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between items-center py-4">
@@ -141,20 +142,21 @@
                     </div>
                 </div>
             </nav>
-
+            <!-- Hero Section -->
             <section
-                class="relative bg-[url(images/golf-ball-basket-6000-4000.jpg)] py-20 aspect-video bg-cover bg-center bg-no-repeat w-full h-auto">
+                class="relative bg-[url(images/golf-ball-basket-6000-4000.jpg)] aspect-video bg-cover bg-center bg-no-repeat w-full h-auto">
                 <div class="absolute inset-0 bg-black/30 flex-1 h-full"></div>
                 <div
                     class="relative z-10 flex flex-col container mx-auto px-4 sm:px-6 lg:px-8 text-left w-full h-full justify-between">
-                    <h1 class="text-3xl font-medium text-white mb-6 underline mt-9">Rates</h1>
-                    <div class="object-left-bottom mb-5">
-                        <p class="text-[80px] font-bold font-inter text-white ">Play True.</p>
-                        <p class="text-[80px] font-bold font-inter text-white -mt-10">Elevate Your Golf.</p>
-                        <p class="text-lg font-inter text-white pl-1">From junior to experienced golfers, there
+                    <h1 class="text-xl lg:text-3xl font-medium text-white mb-6 underline mt-2 sm:mt-8 md:mt-28">Rates
+                    </h1>
+                    <div class="object-left-bottom mb-8 lg:mb-20">
+                        <p class="text-5xl lg:text-[80px] font-bold font-inter text-white ">Play True. <br> Elevate Your
+                            Golf.</p>
+                        <p class=" lg:text-lg font-inter text-white pl-1 mt-5">From junior to experienced golfers, there
                             are programmes that will cater to all.</p>
                         <button
-                            class="ml-1 mt-6 px-12 py-3 bg-white text-[#083C2F] text-[18px] rounded-2xl hover:bg-gray-100 transition-colors">Explore</button>
+                            class="hidden sm:block ml-1 mt-6 px-12 py-3 bg-white text-[#083C2F] text-[18px] rounded-2xl hover:bg-gray-100 transition-colors">Explore</button>
                     </div>
 
                 </div>
@@ -956,7 +958,7 @@
                                 are equipped with training <br>and skill sets to help you reach your goals in your TRUE
                                 journey.</p>
                             <div class="flex flex-row items-center gap-3">
-                                <button
+                                <button id="prev-coach"
                                     class="w-10 h-10 rounded-full flex items-center justify-center bg-[#083C2F]/10 hover:bg-[#083C2F] group transition-colors"
                                     aria-label="Previous coach">
                                     <svg class="w-5 h-5 text-[#083C2F] group-hover:text-white transition-colors"
@@ -976,7 +978,7 @@
                                             fill="none" />
                                     </svg>
                                 </button>
-                                <button
+                                <button id="next-coach"
                                     class="w-10 h-10 rounded-full flex items-center justify-center bg-[#083C2F] hover:bg-[#083C2F]/10 group transition-colors"
                                     aria-label="Next coach">
                                     <svg class="w-5 h-5 text-white group-hover:text-[#083C2F] transition-colors"
@@ -1000,15 +1002,19 @@
                         </div>
                     </div>
                     <div>
-                        <div class="flex flex-row gap-8 py-8 pl-2 md:ml-20 overflow-x-auto">
+                        <div id="coach-scroll-box"
+                            class="flex flex-row gap-8 py-8 pl-2 md:ml-20 overflow-x-auto scroll-smooth hide-scrollbar">
                             <!-- Text card -->
                             <div
                                 class="flex flex-shrink-0 w-[380px] h-[500px] rounded-[60px] border-2 border-[#083C2F] p-12 bg-white flex-col justify-between">
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#083C2F] mb-1">Jordan Tsan</h3>
-                                    <p class="text-base text-[#083C2F] mb-4">Lead Coach</p>
+                                    <h3 id="text-card-name"
+                                        class="text-xl font-bold text-[#083C2F] mb-1">Jordan Tsan</h3>
+                                    <p id="text-card-role"
+                                        class="text-base text-[#083C2F] mb-4">Lead Coach</p>
                                 </div>
-                                <p class="text-sm text-[#083C2F]/80 bottom-0">
+                                <p id="text-card-description"
+                                    class="text-sm text-[#083C2F]/80 bottom-0">
                                     Jordan makes golf simple and fun with clear, feel-based coaching tailored to each
                                     player. He specialises in junior development and personalised progress. He focuses
                                     on
@@ -1018,11 +1024,11 @@
                             </div>
 
                             <!-- Image cards -->
-                            <div class="flex flex-row gap-8">
+                            <div class="flex flex-row gap-8 mr-5">
                                 <!-- Coach image card -->
-                                <div
-                                    class="relative w-[380px] h-[500px] rounded-[60px] overflow-hidden bg-gray-100 flex items-end border">
-                                    <img src="images/coach-jorden-2.png"
+                                <div id="coach-card-1"
+                                    class="relative w-[380px] h-[500px] rounded-[60px] overflow-hidden bg-gray-100 flex items-end border hover:shadow-lg transition-shadow">
+                                    <img src="images/jordan-card.png"
                                         alt="Jordan Tsan"
                                         class="absolute inset-0 w-full h-full object-cover" />
                                     <div class="relative z-10 p-6 flex flex-col">
@@ -1030,8 +1036,8 @@
                                         <span class="text-white text-base">Lead Coach</span>
                                     </div>
                                     <button
-                                        class="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-white/80 flex items-center justify-center shadow-lg">
-                                        <svg class="w-6 h-6 text-[#083C2F]"
+                                        class="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-white/80 flex items-center justify-center shadow-lg hover:bg-[#083C2F] group transition-colors">
+                                        <svg class="w-6 h-6 text-[#083C2F] group-hover:text-white transition-colors"
                                             fill="none"
                                             stroke="currentColor"
                                             stroke-width="2"
@@ -1050,18 +1056,18 @@
                                     </button>
                                 </div>
                                 <!-- Coach image card -->
-                                <div
-                                    class="relative w-[380px] h-[500px] rounded-[60px] overflow-hidden bg-gray-100 flex items-end border">
-                                    <img src="images/coach-jorden-2.png"
-                                        alt="Jordan Tsan"
+                                <div id="coach-card-2"
+                                    class="relative w-[380px] h-[500px] rounded-[60px] overflow-hidden bg-gray-100 flex items-end border hover:shadow-lg transition-shadow">
+                                    <img src="images/adrian-card.png"
+                                        alt="Adrian Tan"
                                         class="absolute inset-0 w-full h-full object-cover" />
                                     <div class="relative z-10 p-6 flex flex-col">
-                                        <span class="text-white text-lg font-semibold">Jordan Tsan</span>
+                                        <span class="text-white text-lg font-semibold">Adrian Tan</span>
                                         <span class="text-white text-base">Lead Coach</span>
                                     </div>
                                     <button
-                                        class="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-white/80 flex items-center justify-center shadow-lg">
-                                        <svg class="w-6 h-6 text-[#083C2F]"
+                                        class="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-white/80 flex items-center justify-center shadow-lg hover:bg-[#083C2F] group transition-colors">
+                                        <svg class="w-6 h-6 text-[#083C2F] group-hover:text-white transition-colors"
                                             fill="none"
                                             stroke="currentColor"
                                             stroke-width="2"
@@ -1080,48 +1086,18 @@
                                     </button>
                                 </div>
                                 <!-- Coach image card -->
-                                <div
-                                    class="relative w-[380px] h-[500px] rounded-[60px] overflow-hidden bg-gray-100 flex items-end border">
-                                    <img src="images/coach-jorden-2.png"
-                                        alt="Jordan Tsan"
+                                <div id="coach-card-3"
+                                    class="relative w-[380px] h-[500px] rounded-[60px] overflow-hidden bg-gray-100 flex items-end border hover:shadow-lg transition-shadow">
+                                    <img src="images/tommy-card.png"
+                                        alt="Tommy Tan"
                                         class="absolute inset-0 w-full h-full object-cover" />
                                     <div class="relative z-10 p-6 flex flex-col">
-                                        <span class="text-white text-lg font-semibold">Jordan Tsan</span>
-                                        <span class="text-white text-base">Lead Coach</span>
+                                        <span class="text-white text-lg font-semibold">Tommy Tan</span>
+                                        <span class="text-white text-base">Head Coach</span>
                                     </div>
                                     <button
-                                        class="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-white/80 flex items-center justify-center shadow-lg">
-                                        <svg class="w-6 h-6 text-[#083C2F]"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            viewBox="0 0 24 24">
-                                            <circle cx="12"
-                                                cy="12"
-                                                r="11"
-                                                stroke="none" />
-                                            <path d="M11 8l4 4-4 4"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                fill="none" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <!-- Coach image card -->
-                                <div
-                                    class="relative w-[380px] h-[500px] rounded-[60px] overflow-hidden bg-gray-100 flex items-end border">
-                                    <img src="images/coach-jorden-2.png"
-                                        alt="Jordan Tsan"
-                                        class="absolute inset-0 w-full h-full object-cover" />
-                                    <div class="relative z-10 p-6 flex flex-col">
-                                        <span class="text-white text-lg font-semibold">Jordan Tsan</span>
-                                        <span class="text-white text-base">Lead Coach</span>
-                                    </div>
-                                    <button
-                                        class="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-white/80 flex items-center justify-center shadow-lg">
-                                        <svg class="w-6 h-6 text-[#083C2F]"
+                                        class="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-white/80 flex items-center justify-center shadow-lg hover:bg-[#083C2F] group transition-colors">
+                                        <svg class="w-6 h-6 text-[#083C2F] group-hover:text-white transition-colors"
                                             fill="none"
                                             stroke="currentColor"
                                             stroke-width="2"
@@ -1302,6 +1278,7 @@
                 </div>
             </a>
             <script>
+                // Mobile Menu Toggle
                 const btn = document.querySelector('.lg\\:hidden[aria-label="Toggle menu"]');
                 const menu = document.getElementById('mobile-menu');
                 const closeBtn = document.getElementById('close-mobile-menu');
@@ -1350,6 +1327,57 @@
                         // TODO: Show/hide rate sections based on selection
                     });
                 });
+                const coachCardData = [
+                    {
+                        name: "Jordan Tsan",
+                        role: "Lead Coach",
+                        description: "Jordan makes golf simple and fun with clear, feel-based coaching tailored to each player. He specialises in junior development and personalised progress. He focuses on fostering an encouraging environment for players with age and skill-appropriate drills. "
+                    },
+                    {
+                        name: "Adrian Tan",
+                        role: "Lead Coach",
+                        description: "Adrian is a PGA AAA coach with years of experience. He specialises in short game development and creates structured and effective programs to build confidence, consistency, and a lasting love for the game. He has coached golfers of all levels and is committed to help players develop hollistically."
+                    },
+                    {
+                        name: "Tommy Tan",
+                        role: "Head Coach",
+                        description: "Tommy is a PGA-certified coach and is an alumni of the Seletar Junior Programme. Mentored by top professionals like Greg Anketell, he is passionate about helping golfers with foundational and advanced techniques. He has international playing experience and has coached golfers of all levels and ages."
+                    }
+
+
+                ];
+
+
+                // Coach Scroll
+                const scrollBox = document.getElementById('coach-scroll-box');
+                const prevCoachBtn = document.getElementById('prev-coach');
+                const nextCoachBtn = document.getElementById('next-coach');
+                prevCoachBtn.addEventListener('click', function (e) {
+                    scrollBox.scrollLeft -= scrollBox.clientWidth;
+                });
+                nextCoachBtn.addEventListener('click', function (e) {
+                    scrollBox.scrollLeft += scrollBox.clientWidth;
+                });
+
+                const textCardName = document.getElementById('text-card-name');
+                const textCardRole = document.getElementById('text-card-role');
+                const textCardDescription = document.getElementById('text-card-description');
+
+                const coachCard1 = document.getElementById('coach-card-1');
+                const coachCard2 = document.getElementById('coach-card-2');
+                const coachCard3 = document.getElementById('coach-card-3');
+
+                const coachCards = [coachCard1, coachCard2, coachCard3];
+                coachCards.forEach(card => {
+                    card.addEventListener('mouseenter', () => {
+                        const coachData = coachCardData[coachCards.indexOf(card)];
+                        textCardName.textContent = coachData.name;
+                        textCardRole.textContent = coachData.role;
+                        textCardDescription.textContent = coachData.description;
+                    });
+                });
+
+
             </script>
         </div>
     </body>
