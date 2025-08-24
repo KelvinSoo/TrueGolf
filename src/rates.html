@@ -1444,10 +1444,12 @@
                                 b.setAttribute('aria-pressed', 'true');
                                 if (b.getAttribute('data-key') == 'KINDER') {
                                     juniorTermTable.classList.remove('hidden');
+                                    juniorTermTable.classList.add('flex');
                                     headCoachTable.classList.add('hidden');
                                     leadCoachTable.classList.add('hidden');
                                 } else {
                                     b.parentElement.setAttribute('data-selected', b.getAttribute('data-key'));
+                                    juniorTermTable.classList.remove('flex');
                                     juniorTermTable.classList.add('hidden');
                                     headCoachTable.classList.remove('hidden');
                                     leadCoachTable.classList.remove('hidden');
