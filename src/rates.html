@@ -183,7 +183,7 @@
                             class="text-sm sm:text-base flex-1 px-8 py-2 rounded-xl font-medium text-[#083C2F] bg-transparent hover:bg-[#e5e5e5] transition-colors focus:outline-none"
                             aria-pressed="false">Junior</button>
                         <button id="toggle-kinder"
-                            class="text-sm sm:text-base flex-1 px-8 py-2 rounded-xl font-medium text-[#083C2F] bg-transparent aria-pressed:true:hover:bg-[#083C2F] hover:bg-[#e5e5e5] transition-colors focus:outline-none"
+                            class="text-sm sm:text-base flex-1 px-8 py-2 rounded-xl font-medium text-[#083C2F] bg-transparent hover:bg-[#e5e5e5] transition-colors focus:outline-none"
                             aria-pressed="false">Junior Term & Kinder</button>
                     </div>
                 </div>
@@ -1306,6 +1306,15 @@
                 langDropdown.addEventListener('click', function (e) {
                     e.stopPropagation();
                 });
+                console.log('Fetching price data...');
+                fetch('/priceData.json')
+                    .then(res => res.json())
+                    .then(data => {
+                        // Access the price
+                        const price = data["ADULT"]["HEAD"]["ONE"]["MEMBER"]["SINGLE"].price;
+                        console.log('Price for 1hr, head, member, adult, single pax:', price);
+                    })
+                    .catch(err => console.error('Error loading priceData.json:', err));
                 // Age Group Toggle
                 const buttons = [
                     document.getElementById('toggle-adult'),
@@ -1325,7 +1334,7 @@
                                 b.setAttribute('aria-pressed', 'false');
                             }
                         });
-                        // TODO: Show/hide rate sections based on selection
+
                     });
                 });
                 const coachCardData = [

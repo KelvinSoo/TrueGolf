@@ -1,0 +1,434 @@
+{
+  "ADULT": {
+    "HEAD": {
+      "ONE": {
+        "PUBLIC": {
+          "SINGLE": {
+            "price": "$200"
+          },
+          "DOUBLE": {
+            "price": "$150"
+          },
+          "TRIPLE": {
+            "price": "$120"
+          }
+        },
+        "SOCIAL": {
+          "SINGLE": {
+            "price": "$190"
+          },
+          "DOUBLE": {
+            "price": "$143"
+          },
+          "TRIPLE": {
+            "price": "$114"
+          }
+        },
+        "MEMBER": {
+          "SINGLE": {
+            "price": "$180"
+          },
+          "DOUBLE": {
+            "price": "$135"
+          },
+          "TRIPLE": {
+            "price": "$108"
+          }
+        }
+      },
+      "FIVE": {
+        "PUBLIC": {
+          "SINGLE": {
+            "price": "$850"
+          },
+          "DOUBLE": {
+            "price": "$550"
+          },
+          "TRIPLE": {
+            "price": "$450"
+          }
+        },
+        "SOCIAL": {
+          "SINGLE": {
+            "price": "$803"
+          },
+          "DOUBLE": {
+            "price": "$523"
+          },
+          "TRIPLE": {
+            "price": "$428"
+          }
+        },
+        "MEMBER": {
+          "SINGLE": {
+            "price": "$180"
+          },
+          "DOUBLE": {
+            "price": "$135"
+          },
+          "TRIPLE": {
+            "price": "$108"
+          }
+        }
+      },
+      "TEN": {
+        "PUBLIC": {
+          "SINGLE": {
+            "price": "$1,600"
+          },
+          "DOUBLE": {
+            "price": "$900"
+          },
+          "TRIPLE": {
+            "price": "$700"
+          }
+        },
+        "SOCIAL": {
+          "SINGLE": {
+            "price": "$1,520"
+          },
+          "DOUBLE": {
+            "price": "$855"
+          },
+          "TRIPLE": {
+            "price": "$655"
+          }
+        },
+        "MEMBER": {
+          "SINGLE": {
+            "price": "$1,440"
+          },
+          "DOUBLE": {
+            "price": "$810"
+          },
+          "TRIPLE": {
+            "price": "$630"
+          }
+        }
+      }
+    },
+    "LEAD": {
+      "ONE": {
+        "PUBLIC": {
+          "SINGLE": {
+            "price": "$160"
+          },
+          "DOUBLE": {
+            "price": "$130"
+          },
+          "TRIPLE": {
+            "price": "$110"
+          }
+        },
+        "SOCIAL": {
+          "SINGLE": {
+            "price": "$152"
+          },
+          "DOUBLE": {
+            "price": "$124"
+          },
+          "TRIPLE": {
+            "price": "$105"
+          }
+        },
+        "MEMBER": {
+          "SINGLE": {
+            "price": "$144"
+          },
+          "DOUBLE": {
+            "price": "$117"
+          },
+          "TRIPLE": {
+            "price": "$99"
+          }
+        }
+      },
+      "FIVE": {
+        "PUBLIC": {
+          "SINGLE": {
+            "price": "$750"
+          },
+          "DOUBLE": {
+            "price": "$500"
+          },
+          "TRIPLE": {
+            "price": "$400"
+          }
+        },
+        "SOCIAL": {
+          "SINGLE": {
+            "price": "$713"
+          },
+          "DOUBLE": {
+            "price": "$475"
+          },
+          "TRIPLE": {
+            "price": "$380"
+          }
+        },
+        "MEMBER": {
+          "SINGLE": {
+            "price": "$675"
+          },
+          "DOUBLE": {
+            "price": "$450"
+          },
+          "TRIPLE": {
+            "price": "$360"
+          }
+        }
+      },
+      "TEN": {
+        "PUBLIC": {
+          "SINGLE": {
+            "price": "$1,400"
+          },
+          "DOUBLE": {
+            "price": "$800"
+          },
+          "TRIPLE": {
+            "price": "$600"
+          }
+        },
+        "SOCIAL": {
+          "SINGLE": {
+            "price": "$1,330"
+          },
+          "DOUBLE": {
+            "price": "$760"
+          },
+          "TRIPLE": {
+            "price": "$570"
+          }
+        },
+        "MEMBER": {
+          "SINGLE": {
+            "price": "$1,260"
+          },
+          "DOUBLE": {
+            "price": "$720"
+          },
+          "TRIPLE": {
+            "price": "$540"
+          }
+        }
+      }
+    }
+  },
+  "JUNIOR": {
+    "HEAD": {
+      "ONE": {
+        "PUBLIC": {
+          "SINGLE": {
+            "price": "$180"
+          },
+          "DOUBLE": {
+            "price": "$130"
+          },
+          "TRIPLE": {
+            "price": "$100"
+          }
+        },
+        "SOCIAL": {
+          "SINGLE": {
+            "price": "$171"
+          },
+          "DOUBLE": {
+            "price": "$124"
+          },
+          "TRIPLE": {
+            "price": "$95"
+          }
+        },
+        "MEMBER": {
+          "SINGLE": {
+            "price": "$162"
+          },
+          "DOUBLE": {
+            "price": "$117"
+          },
+          "TRIPLE": {
+            "price": "$90"
+          }
+        }
+      },
+      "FIVE": {
+        "PUBLIC": {
+          "SINGLE": {
+            "price": "$750"
+          },
+          "DOUBLE": {
+            "price": "$450"
+          },
+          "TRIPLE": {
+            "price": "$350"
+          }
+        },
+        "SOCIAL": {
+          "SINGLE": {
+            "price": "$713"
+          },
+          "DOUBLE": {
+            "price": "$428"
+          },
+          "TRIPLE": {
+            "price": "$333"
+          }
+        },
+        "MEMBER": {
+          "SINGLE": {
+            "price": "$675"
+          },
+          "DOUBLE": {
+            "price": "$405"
+          },
+          "TRIPLE": {
+            "price": "$315"
+          }
+        }
+      },
+      "TEN": {
+        "PUBLIC": {
+          "SINGLE": {
+            "price": "$1,400"
+          },
+          "DOUBLE": {
+            "price": "$800"
+          },
+          "TRIPLE": {
+            "price": "$600"
+          }
+        },
+        "SOCIAL": {
+          "SINGLE": {
+            "price": "$1,330"
+          },
+          "DOUBLE": {
+            "price": "$760"
+          },
+          "TRIPLE": {
+            "price": "$570"
+          }
+        },
+        "MEMBER": {
+          "SINGLE": {
+            "price": "$1,260"
+          },
+          "DOUBLE": {
+            "price": "$720"
+          },
+          "TRIPLE": {
+            "price": "$540"
+          }
+        }
+      }
+    },
+    "LEAD": {
+      "ONE": {
+        "PUBLIC": {
+          "SINGLE": {
+            "price": "$140"
+          },
+          "DOUBLE": {
+            "price": "$110"
+          },
+          "TRIPLE": {
+            "price": "$90"
+          }
+        },
+        "SOCIAL": {
+          "SINGLE": {
+            "price": "$133"
+          },
+          "DOUBLE": {
+            "price": "$105"
+          },
+          "TRIPLE": {
+            "price": "$86"
+          }
+        },
+        "MEMBER": {
+          "SINGLE": {
+            "price": "$126"
+          },
+          "DOUBLE": {
+            "price": "$99"
+          },
+          "TRIPLE": {
+            "price": "$81"
+          }
+        }
+      },
+      "FIVE": {
+        "PUBLIC": {
+          "SINGLE": {
+            "price": "$650"
+          },
+          "DOUBLE": {
+            "price": "$400"
+          },
+          "TRIPLE": {
+            "price": "$300"
+          }
+        },
+        "SOCIAL": {
+          "SINGLE": {
+            "price": "$618"
+          },
+          "DOUBLE": {
+            "price": "$380"
+          },
+          "TRIPLE": {
+            "price": "$285"
+          }
+        },
+        "MEMBER": {
+          "SINGLE": {
+            "price": "$585"
+          },
+          "DOUBLE": {
+            "price": "$360"
+          },
+          "TRIPLE": {
+            "price": "$270"
+          }
+        }
+      },
+      "TEN": {
+        "PUBLIC": {
+          "SINGLE": {
+            "price": "$1,200"
+          },
+          "DOUBLE": {
+            "price": "$700"
+          },
+          "TRIPLE": {
+            "price": "$500"
+          }
+        },
+        "SOCIAL": {
+          "SINGLE": {
+            "price": "$1,140"
+          },
+          "DOUBLE": {
+            "price": "$665"
+          },
+          "TRIPLE": {
+            "price": "$475"
+          }
+        },
+        "MEMBER": {
+          "SINGLE": {
+            "price": "$1,080"
+          },
+          "DOUBLE": {
+            "price": "$630"
+          },
+          "TRIPLE": {
+            "price": "$450"
+          }
+        }
+      }
+    }
+  }
+}
