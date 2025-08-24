@@ -1427,11 +1427,6 @@
                 }
 
 
-                getRates().then(rates => {
-                    const rate = rates["ADULT"]["HEAD"]["ONE"]["MEMBER"]["SINGLE"].price;
-                });
-
-
                 // Age Group Toggle
                 const ageGroupButtons = [
                     document.getElementById('toggle-adult'),
@@ -1513,6 +1508,7 @@
                                     b.classList.remove('text-black/10', 'border-transparent', 'hover:border-black/10');
                                     b.setAttribute('aria-pressed', 'true');
                                     b.parentElement.setAttribute('data-selected', b.getAttribute('data-key'));
+                                    updateAllPrices(getRates());
                                 } else {
                                     b.classList.remove('text-[#083C2F]', 'border-[#083C2F]');
                                     b.classList.add('text-black/10', 'border-transparent', 'hover:border-black/10');
