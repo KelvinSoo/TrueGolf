@@ -1421,8 +1421,6 @@
                 async function getRates() {
                     const response = await fetch('/priceData.json');
                     const rates = await response.json();
-                    // Now you can use rates here
-                    console.log(rates);
                     return rates;
                 }
 
@@ -1444,7 +1442,9 @@
                                 b.classList.remove('bg-transparent', 'text-[#083C2F]', 'hover:bg-[#e5e5e5]');
                                 b.setAttribute('aria-pressed', 'true');
                                 b.parentElement.setAttribute('data-selected', b.getAttribute('data-key'));
-                                updateAllPrices(getRates());
+                                getRates().then(rates => {
+                                    updateAllPrices(rates);
+                                });
                             } else {
                                 b.classList.remove('bg-[#083C2F]', 'text-white');
                                 b.classList.add('bg-transparent', 'text-[#083C2F]', 'hover:bg-[#e5e5e5]');
@@ -1510,7 +1510,9 @@
                                     b.classList.remove('text-black/10', 'border-transparent', 'hover:border-black/10');
                                     b.setAttribute('aria-pressed', 'true');
                                     b.parentElement.setAttribute('data-selected', b.getAttribute('data-key'));
-                                    updateAllPrices(getRates());
+                                    getRates().then(rates => {
+                                        updateAllPrices(rates);
+                                    });
                                 } else {
                                     b.classList.remove('text-[#083C2F]', 'border-[#083C2F]');
                                     b.classList.add('text-black/10', 'border-transparent', 'hover:border-black/10');
@@ -1556,7 +1558,6 @@
                 const textCardName = document.getElementById('text-card-name');
                 const textCardRole = document.getElementById('text-card-role');
                 const textCardDescription = document.getElementById('text-card-description');
-
                 const coachCard1 = document.getElementById('coach-card-1');
                 const coachCard2 = document.getElementById('coach-card-2');
                 const coachCard3 = document.getElementById('coach-card-3');
