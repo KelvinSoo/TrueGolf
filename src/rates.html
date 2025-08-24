@@ -174,22 +174,26 @@
                 </div>
                 <!-- Agegroup Toggle Buttons -->
                 <div class="container mx-auto max-w-3xl justify-center px-8">
-                    <div id="rate-toggle"
+                    <div id="age-toggle"
+                        data-selected="ADULT"
                         class="flex bg-white border rounded-xl shadow-inner p-1 gap-2">
                         <button id="toggle-adult"
+                            data-key="ADULT"
                             class="text-sm sm:text-base flex-1 px-8 py-2 rounded-xl md:w- font-medium text-white bg-[#083C2F] transition-colors focus:outline-none"
                             aria-pressed="true">Adult</button>
                         <button id="toggle-junior"
+                            data-key="JUNIOR"
                             class="text-sm sm:text-base flex-1 px-8 py-2 rounded-xl font-medium text-[#083C2F] bg-transparent hover:bg-[#e5e5e5] transition-colors focus:outline-none"
                             aria-pressed="false">Junior</button>
                         <button id="toggle-kinder"
+                            data-key="KINDER"
                             class="text-sm sm:text-base flex-1 px-8 py-2 rounded-xl font-medium text-[#083C2F] bg-transparent hover:bg-[#e5e5e5] transition-colors focus:outline-none"
                             aria-pressed="false">Junior Term & Kinder</button>
                     </div>
                 </div>
                 <!-- Head Coach Pricing Tables -->
                 <div class="flex pt-12">
-                    <div id="head-coach-rates"
+                    <div id="head-coach-table"
                         class="container mx-auto py-10 px-4 sm:px-6 lg:px-8 bg-white rounded-3xl">
                         <div class="relative flex items-center justify-center mb-2">
                             <div class="flex flex-col items-center text-center">
@@ -230,15 +234,24 @@
                                             Rate Type</div>
                                     </div>
                                     <!-- Membership Tabs -->
-                                    <div
+                                    <div id="hc-1-toggle"
+                                        data-selected="PUBLIC"
+                                        data-package="ONE"
+                                        data-coach="HEAD"
                                         class="flex justify-center mt-4 gap-3 text-[#083C2F] font-medium text-base -mr-3">
                                         <button id="public-rate-hc-1"
+                                            data-key="PUBLIC"
+                                            aria-pressed="true"
                                             class="text-[#083C2F] font-bold border-b-4 border-[#083C2F] leading-tight px-2">Public</button>
                                         <span class="h-4 w-px bg-black/10 mx-1 inline-block align-middle mt-1"></span>
                                         <button id="social-rate-hc-1"
+                                            data-key="SOCIAL"
+                                            aria-pressed="false"
                                             class="text-black/10 border-b-4 border-transparent hover:border-black/10 px-2">Social</button>
                                         <span class="h-4 w-px bg-black/10 mx-1 inline-block align-middle mt-1"></span>
                                         <button id="member-rate-hc-1"
+                                            data-key="MEMBER"
+                                            aria-pressed="false"
                                             class="text-black/10 border-b-4 border-transparent hover:border-black/10 px-2">Member</button>
                                     </div>
                                     <!-- Pax Grid -->
@@ -329,15 +342,24 @@
                                             Rate Type</div>
                                     </div>
                                     <!-- Membership Tabs -->
-                                    <div
+                                    <div id="hc-5-toggle"
+                                        data-selected="PUBLIC"
+                                        data-package="FIVE"
+                                        data-coach="HEAD"
                                         class="flex justify-center mt-4 gap-3 text-[#083C2F] font-medium text-base -mr-3">
                                         <button id="public-rate-hc-5"
+                                            aria-pressed="true"
+                                            data-key="PUBLIC"
                                             class="text-[#083C2F] font-bold border-b-4 border-[#083C2F] leading-tight px-2">Public</button>
                                         <span class="h-4 w-px bg-black/10 mx-1 inline-block align-middle mt-1"></span>
                                         <button id="social-rate-hc-5"
+                                            aria-pressed="false"
+                                            data-key="SOCIAL"
                                             class="text-black/10 border-b-4 border-transparent hover:border-black/10 px-2">Social</button>
                                         <span class="h-4 w-px bg-black/10 mx-1 inline-block align-middle mt-1"></span>
                                         <button id="member-rate-hc-5"
+                                            aria-pressed="false"
+                                            data-key="MEMBER"
                                             class="text-black/10 border-b-4 border-transparent hover:border-black/10 px-2">Member</button>
                                     </div>
                                     <!-- Pax Grid -->
@@ -428,15 +450,24 @@
                                             Rate Type</div>
                                     </div>
                                     <!-- Membership Tabs -->
-                                    <div
+                                    <div id="hc-10-toggle"
+                                        data-selected="PUBLIC"
+                                        data-package="TEN"
+                                        data-coach="HEAD"
                                         class="flex justify-center mt-4 gap-3 text-[#083C2F] font-medium text-base -mr-3">
                                         <button id="public-rate-hc-10"
+                                            aria-pressed="true"
+                                            data-key="PUBLIC"
                                             class="text-[#083C2F] font-bold border-b-4 border-[#083C2F] leading-tight px-2">Public</button>
                                         <span class="h-4 w-px bg-black/10 mx-1 inline-block align-middle mt-1"></span>
                                         <button id="social-rate-hc-10"
+                                            aria-pressed="false"
+                                            data-key="SOCIAL"
                                             class="text-black/10 border-b-4 border-transparent hover:border-black/10 px-2">Social</button>
                                         <span class="h-4 w-px bg-black/10 mx-1 inline-block align-middle mt-1"></span>
                                         <button id="member-rate-hc-10"
+                                            aria-pressed="false"
+                                            data-key="MEMBER"
                                             class="text-black/10 border-b-4 border-transparent hover:border-black/10 px-2">Member</button>
                                     </div>
                                     <!-- Pax Grid -->
@@ -564,15 +595,24 @@
                                             Rate Type</div>
                                     </div>
                                     <!-- Membership Tabs -->
-                                    <div
+                                    <div id="lc-1-toggle"
+                                        data-selected="PUBLIC"
+                                        data-package="ONE"
+                                        data-coach="LEAD"
                                         class="flex justify-center mt-4 gap-3 text-[#083C2F] font-medium text-base -mr-3">
                                         <button id="public-rate-lc-1"
+                                            aria-pressed="true"
+                                            data-key="PUBLIC"
                                             class="text-[#083C2F] font-bold border-b-4 border-[#083C2F] leading-tight px-2">Public</button>
                                         <span class="h-4 w-px bg-black/10 mx-1 inline-block align-middle mt-1"></span>
                                         <button id="social-rate-lc-1"
+                                            aria-pressed="false"
+                                            data-key="SOCIAL"
                                             class="text-black/10 border-b-4 border-transparent hover:border-black/10 px-2">Social</button>
                                         <span class="h-4 w-px bg-black/10 mx-1 inline-block align-middle mt-1"></span>
                                         <button id="member-rate-lc-1"
+                                            aria-pressed="false"
+                                            data-key="MEMBER"
                                             class="text-black/10 border-b-4 border-transparent hover:border-black/10 px-2">Member</button>
                                     </div>
                                     <!-- Pax Grid -->
@@ -660,15 +700,24 @@
                                             Rate Type</div>
                                     </div>
                                     <!-- Membership Tabs -->
-                                    <div
+                                    <div id="lc-5-toggle"
+                                        data-selected="PUBLIC"
+                                        data-package="FIVE"
+                                        data-coach="LEAD"
                                         class="flex justify-center mt-4 gap-3 text-[#083C2F] font-medium text-base -mr-3">
                                         <button id="public-rate-lc-5"
+                                            aria-pressed="true"
+                                            data-key="PUBLIC"
                                             class="text-[#083C2F] font-bold border-b-4 border-[#083C2F] leading-tight px-2">Public</button>
                                         <span class="h-4 w-px bg-black/10 mx-1 inline-block align-middle mt-1"></span>
                                         <button id="social-rate-lc-5"
+                                            aria-pressed="false"
+                                            data-key="SOCIAL"
                                             class="text-black/10 border-b-4 border-transparent hover:border-black/10 px-2">Social</button>
                                         <span class="h-4 w-px bg-black/10 mx-1 inline-block align-middle mt-1"></span>
                                         <button id="member-rate-lc-5"
+                                            aria-pressed="false"
+                                            data-key="MEMBER"
                                             class="text-black/10 border-b-4 border-transparent hover:border-black/10 px-2">Member</button>
                                     </div>
                                     <!-- Pax Grid -->
@@ -730,11 +779,11 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-row justify-center gap-14 py-3">
-                                        <span id="price-hc-5-1"
+                                        <span id="price-lc-5-1"
                                             class="text-lg font-semibold text-[#083C2F] w-10">$750</span>
-                                        <span id="price-hc-5-2"
+                                        <span id="price-lc-5-2"
                                             class="text-lg font-semibold text-[#083C2F] w-10">$500</span>
-                                        <span id="price-hc-5-3"
+                                        <span id="price-lc-5-3"
                                             class="text-lg font-semibold text-[#083C2F] w-10">$400</span>
 
                                     </div>
@@ -759,15 +808,24 @@
                                             Rate Type</div>
                                     </div>
                                     <!-- Membership Tabs -->
-                                    <div
+                                    <div id="lc-10-toggle"
+                                        data-selected="PUBLIC"
+                                        data-package="TEN"
+                                        data-coach="LEAD"
                                         class="flex justify-center mt-4 gap-3 text-[#083C2F] font-medium text-base -mr-3">
                                         <button id="public-rate-lc-10"
+                                            aria-pressed="true"
+                                            data-key="PUBLIC"
                                             class="text-[#083C2F] font-bold border-b-4 border-[#083C2F] leading-tight px-2">Public</button>
                                         <span class="h-4 w-px bg-black/10 mx-1 inline-block align-middle mt-1"></span>
                                         <button id="social-rate-lc-10"
+                                            aria-pressed="false"
+                                            data-key="SOCIAL"
                                             class="text-black/10 border-b-4 border-transparent hover:border-black/10 px-2">Social</button>
                                         <span class="h-4 w-px bg-black/10 mx-1 inline-block align-middle mt-1"></span>
                                         <button id="member-rate-lc-10"
+                                            aria-pressed="false"
+                                            data-key="MEMBER"
                                             class="text-black/10 border-b-4 border-transparent hover:border-black/10 px-2">Member</button>
                                     </div>
                                     <!-- Pax Grid -->
@@ -1306,24 +1364,86 @@
                 langDropdown.addEventListener('click', function (e) {
                     e.stopPropagation();
                 });
-                console.log('Fetching price data...');
-                fetch('/priceData.json')
-                    .then(res => res.json())
-                    .then(data => {
-                        // Access the price
-                        const price = data["ADULT"]["HEAD"]["ONE"]["MEMBER"]["SINGLE"].price;
-                        console.log('Price for 1hr, head, member, adult, single pax:', price);
-                    })
-                    .catch(err => console.error('Error loading priceData.json:', err));
+
+
+                function updateAllPrices(rates) {
+                    const ageGroup = document.getElementById('age-toggle').getAttribute('data-selected');
+                    const hcOneToggle = document.getElementById('hc-1-toggle');
+                    document.getElementById('price-hc-1-1').textContent =
+                        rates[ageGroup][hcOneToggle.getAttribute('data-coach')][hcOneToggle.getAttribute('data-package')][hcOneToggle.getAttribute('data-selected')]["SINGLE"].price;
+                    document.getElementById('price-hc-1-2').textContent =
+                        rates[ageGroup][hcOneToggle.getAttribute('data-coach')][hcOneToggle.getAttribute('data-package')][hcOneToggle.getAttribute('data-selected')]["DOUBLE"].price;
+                    document.getElementById('price-hc-1-3').textContent =
+                        rates[ageGroup][hcOneToggle.getAttribute('data-coach')][hcOneToggle.getAttribute('data-package')][hcOneToggle.getAttribute('data-selected')]["TRIPLE"].price;
+
+                    const hcFiveToggle = document.getElementById('hc-5-toggle');
+                    document.getElementById('price-hc-5-1').textContent =
+                        rates[ageGroup][hcFiveToggle.getAttribute('data-coach')][hcFiveToggle.getAttribute('data-package')][hcFiveToggle.getAttribute('data-selected')]["SINGLE"].price;
+                    document.getElementById('price-hc-5-2').textContent =
+                        rates[ageGroup][hcFiveToggle.getAttribute('data-coach')][hcFiveToggle.getAttribute('data-package')][hcFiveToggle.getAttribute('data-selected')]["DOUBLE"].price;
+                    document.getElementById('price-hc-5-3').textContent =
+                        rates[ageGroup][hcFiveToggle.getAttribute('data-coach')][hcFiveToggle.getAttribute('data-package')][hcFiveToggle.getAttribute('data-selected')]["TRIPLE"].price;
+
+                    const hcTenToggle = document.getElementById('hc-10-toggle');
+                    document.getElementById('price-hc-10-1').textContent =
+                        rates[ageGroup][hcTenToggle.getAttribute('data-coach')][hcTenToggle.getAttribute('data-package')][hcTenToggle.getAttribute('data-selected')]["SINGLE"].price;
+                    document.getElementById('price-hc-10-2').textContent =
+                        rates[ageGroup][hcTenToggle.getAttribute('data-coach')][hcTenToggle.getAttribute('data-package')][hcTenToggle.getAttribute('data-selected')]["DOUBLE"].price;
+                    document.getElementById('price-hc-10-3').textContent =
+                        rates[ageGroup][hcTenToggle.getAttribute('data-coach')][hcTenToggle.getAttribute('data-package')][hcTenToggle.getAttribute('data-selected')]["TRIPLE"].price;
+
+                    const lcOneToggle = document.getElementById('lc-1-toggle');
+                    document.getElementById('price-lc-1-1').textContent =
+                        rates[ageGroup][lcOneToggle.getAttribute('data-coach')][lcOneToggle.getAttribute('data-package')][lcOneToggle.getAttribute('data-selected')]["SINGLE"].price;
+                    document.getElementById('price-lc-1-2').textContent =
+                        rates[ageGroup][lcOneToggle.getAttribute('data-coach')][lcOneToggle.getAttribute('data-package')][lcOneToggle.getAttribute('data-selected')]["DOUBLE"].price;
+                    document.getElementById('price-lc-1-3').textContent =
+                        rates[ageGroup][lcOneToggle.getAttribute('data-coach')][lcOneToggle.getAttribute('data-package')][lcOneToggle.getAttribute('data-selected')]["TRIPLE"].price;
+
+                    const lcFiveToggle = document.getElementById('lc-5-toggle');
+                    document.getElementById('price-lc-5-1').textContent =
+                        rates[ageGroup][lcFiveToggle.getAttribute('data-coach')][lcFiveToggle.getAttribute('data-package')][lcFiveToggle.getAttribute('data-selected')]["SINGLE"].price;
+                    document.getElementById('price-lc-5-2').textContent =
+                        rates[ageGroup][lcFiveToggle.getAttribute('data-coach')][lcFiveToggle.getAttribute('data-package')][lcFiveToggle.getAttribute('data-selected')]["DOUBLE"].price;
+                    document.getElementById('price-lc-5-3').textContent =
+                        rates[ageGroup][lcFiveToggle.getAttribute('data-coach')][lcFiveToggle.getAttribute('data-package')][lcFiveToggle.getAttribute('data-selected')]["TRIPLE"].price;
+
+                    const lcTenToggle = document.getElementById('lc-10-toggle');
+                    document.getElementById('price-lc-10-1').textContent =
+                        rates[ageGroup][lcTenToggle.getAttribute('data-coach')][lcTenToggle.getAttribute('data-package')][lcTenToggle.getAttribute('data-selected')]["SINGLE"].price;
+                    document.getElementById('price-lc-10-2').textContent =
+                        rates[ageGroup][lcTenToggle.getAttribute('data-coach')][lcTenToggle.getAttribute('data-package')][lcTenToggle.getAttribute('data-selected')]["DOUBLE"].price;
+                    document.getElementById('price-lc-10-3').textContent =
+                        rates[ageGroup][lcTenToggle.getAttribute('data-coach')][lcTenToggle.getAttribute('data-package')][lcTenToggle.getAttribute('data-selected')]["TRIPLE"].price;
+                }
+
+
+                async function getRates() {
+                    const response = await fetch('/priceData.json');
+                    const rates = await response.json();
+                    // Now you can use rates here
+                    console.log(rates);
+                    return rates;
+                }
+
+
+                getRates().then(rates => {
+                    const rate = rates["ADULT"]["HEAD"]["ONE"]["MEMBER"]["SINGLE"].price;
+                });
+
+
                 // Age Group Toggle
-                const buttons = [
+                const ageGroupButtons = [
                     document.getElementById('toggle-adult'),
                     document.getElementById('toggle-junior'),
                     document.getElementById('toggle-kinder')
                 ];
-                buttons.forEach((btn, idx) => {
+
+
+
+                ageGroupButtons.forEach((btn, idx) => {
                     btn.addEventListener('click', () => {
-                        buttons.forEach((b, i) => {
+                        ageGroupButtons.forEach((b, i) => {
                             if (i === idx) {
                                 b.classList.add('bg-[#083C2F]', 'text-white');
                                 b.classList.remove('bg-transparent', 'text-[#083C2F]', 'hover:bg-[#e5e5e5]');
@@ -1337,6 +1457,74 @@
 
                     });
                 });
+
+
+                const hcOneButtons = [
+                    document.getElementById('public-rate-hc-1'),
+                    document.getElementById('social-rate-hc-1'),
+                    document.getElementById('member-rate-hc-1')
+                ];
+
+                const hcFiveButtons = [
+                    document.getElementById('public-rate-hc-5'),
+                    document.getElementById('social-rate-hc-5'),
+                    document.getElementById('member-rate-hc-5')
+                ];
+
+                const hcTenButtons = [
+                    document.getElementById('public-rate-hc-10'),
+                    document.getElementById('social-rate-hc-10'),
+                    document.getElementById('member-rate-hc-10')
+                ];
+
+                const lcOneButtons = [
+                    document.getElementById('public-rate-lc-1'),
+                    document.getElementById('social-rate-lc-1'),
+                    document.getElementById('member-rate-lc-1')
+                ];
+
+                const lcFiveButtons = [
+                    document.getElementById('public-rate-lc-5'),
+                    document.getElementById('social-rate-lc-5'),
+                    document.getElementById('member-rate-lc-5')
+                ];
+
+                const lcTenButtons = [
+                    document.getElementById('public-rate-lc-10'),
+                    document.getElementById('social-rate-lc-10'),
+                    document.getElementById('member-rate-lc-10')
+                ];
+
+                const allMemeberToggles = [
+                    hcOneButtons,
+                    hcFiveButtons,
+                    hcTenButtons,
+                    lcOneButtons,
+                    lcFiveButtons,
+                    lcTenButtons
+                ];
+
+                allMemeberToggles.forEach((btnSet) => {
+                    btnSet.forEach((btn, idx) => {
+                        btn.addEventListener('click', () => {
+                            allMemeberToggles.forEach((b, i) => {
+                                if (i === idx) {
+                                    b.classList.add('text-[#083C2F] ', 'border-[#083C2F]');
+                                    b.classList.remove('text-black/10', 'border-transparent', 'hover:border-black/10');
+                                    b.setAttribute('aria-pressed', 'true');
+                                    b.parentElement.setAttribute('data-selected', b.getAttribute('data-key'));
+                                } else {
+                                    b.classList.remove('text-[#083C2F]', 'border-[#083C2F]');
+                                    b.classList.add('text-black/10', 'border-transparent', 'hover:border-black/10');
+                                    b.setAttribute('aria-pressed', 'false');
+                                }
+                            });
+
+                        });
+                    });
+                });
+
+
                 const coachCardData = [
                     {
                         name: "Jordan Tsan",
@@ -1356,8 +1544,6 @@
 
 
                 ];
-
-
                 // Coach Scroll
                 const scrollBox = document.getElementById('coach-scroll-box');
                 const prevCoachBtn = document.getElementById('prev-coach');
