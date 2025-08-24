@@ -1507,9 +1507,9 @@
                 allMemeberToggles.forEach((btnSet) => {
                     btnSet.forEach((btn, idx) => {
                         btn.addEventListener('click', () => {
-                            allMemeberToggles.forEach((b, i) => {
+                            btnSet.forEach((b, i) => {
                                 if (i === idx) {
-                                    b.classList.add('text-[#083C2F] ', 'border-[#083C2F]');
+                                    b.classList.add('text-[#083C2F]', 'border-[#083C2F]');
                                     b.classList.remove('text-black/10', 'border-transparent', 'hover:border-black/10');
                                     b.setAttribute('aria-pressed', 'true');
                                     b.parentElement.setAttribute('data-selected', b.getAttribute('data-key'));
