@@ -1443,6 +1443,8 @@
                                 b.classList.add('bg-[#083C2F]', 'text-white');
                                 b.classList.remove('bg-transparent', 'text-[#083C2F]', 'hover:bg-[#e5e5e5]');
                                 b.setAttribute('aria-pressed', 'true');
+                                b.parentElement.setAttribute('data-selected', b.getAttribute('data-key'));
+                                updateAllPrices(getRates());
                             } else {
                                 b.classList.remove('bg-[#083C2F]', 'text-white');
                                 b.classList.add('bg-transparent', 'text-[#083C2F]', 'hover:bg-[#e5e5e5]');
