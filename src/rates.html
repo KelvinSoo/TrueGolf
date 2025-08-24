@@ -911,9 +911,9 @@
 
                 </div>
                 <!-- jr Pricing Tables -->
-                <div class="flex flex-col items-center pt-12">
-                    <div id="junior-term-rates"
-                        class="container mx-auto py-10 px-4 sm:px-6 lg:px-8 bg-white rounded-3xl">
+                <div id="junior-term-table"
+                    class="hidden flex-col items-center pt-12">
+                    <div class="container mx-auto py-10 px-4 sm:px-6 lg:px-8 bg-white rounded-3xl">
                         <div class="relative flex items-center justify-center mb-2">
                             <div class="flex flex-col items-center text-center">
                                 <h2 class="text-xl md:text-xl font-bold text-[#083C2F]">Junior Term Programme & Kinder
@@ -1432,8 +1432,9 @@
                     document.getElementById('toggle-kinder')
                 ];
 
-
-
+                const headCoachTable = document.getElementById('head-coach-rates');
+                const leadCoachTable = document.getElementById('lead-coach-rates');
+                const juniorTermTable = document.getElementById('junior-term-table');
                 ageGroupButtons.forEach((btn, idx) => {
                     btn.addEventListener('click', () => {
                         ageGroupButtons.forEach((b, i) => {
@@ -1441,10 +1442,20 @@
                                 b.classList.add('bg-[#083C2F]', 'text-white');
                                 b.classList.remove('bg-transparent', 'text-[#083C2F]', 'hover:bg-[#e5e5e5]');
                                 b.setAttribute('aria-pressed', 'true');
-                                b.parentElement.setAttribute('data-selected', b.getAttribute('data-key'));
-                                getRates().then(rates => {
-                                    updateAllPrices(rates);
-                                });
+                                if (b.getAttribute('data-key') == 'KINDER') {
+                                    juniorTermTable.classList.remove('hidden');
+                                    headCoachTable.classList.add('hidden');
+                                    leadCoachTable.classList.add('hidden');
+                                } else {
+                                    b.parentElement.setAttribute('data-selected', b.getAttribute('data-key'));
+                                    juniorTermTable.classList.add('hidden');
+                                    headCoachTable.classList.remove('hidden');
+                                    leadCoachTable.classList.remove('hidden');
+                                    getRates().then(rates => {
+                                        updateAllPrices(rates);
+                                    });
+                                }
+
                             } else {
                                 b.classList.remove('bg-[#083C2F]', 'text-white');
                                 b.classList.add('bg-transparent', 'text-[#083C2F]', 'hover:bg-[#e5e5e5]');
