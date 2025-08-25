@@ -148,15 +148,15 @@
                 <div class="absolute inset-0 bg-black/30 flex-1 h-full"></div>
                 <div
                     class="relative z-10 flex flex-col container mx-auto px-4 sm:px-6 lg:px-8 text-left w-full h-full justify-between">
-                    <h1 class="text-xl lg:text-3xl font-medium text-white mb-6 underline mt-2 sm:mt-8 md:mt-28">Rates
+                    <h1 class="text-xl lg:text-3xl font-medium text-white mb-6 underline mt-2 sm:mt-8 lg:mt-28">Rates
                     </h1>
-                    <div class="object-left-bottom mb-8 lg:mb-20">
+                    <div class="object-left-bottom mb-8 lg:mb-20 xl:mb-24 2xl:mb-60">
                         <p class="text-5xl lg:text-[80px] font-bold font-inter text-white ">Play True. <br> Elevate Your
                             Golf.</p>
                         <p class="hidden sm:block lg:text-lg font-inter text-white pl-1 mt-5">From junior to experienced
                             golfers, there
                             are programmes that will cater to all.</p>
-                        <button
+                        <button onclick="window.location.href='contact.html'"
                             class="hidden sm:block ml-1 mt-6 px-12 py-3 bg-white text-[#083C2F] text-[18px] rounded-2xl hover:bg-gray-100 transition-colors">Explore</button>
                     </div>
 
@@ -1519,7 +1519,7 @@
                         btn.addEventListener('click', () => {
                             btnSet.forEach((b, i) => {
                                 if (i === idx) {
-                                    b.classList.add('text-[#083C2F]', 'border-[#083C2F]');
+                                    b.classList.add('text-[#083C2F]', 'border-[#083C2F]', 'font-bold');
                                     b.classList.remove('text-black/10', 'border-transparent', 'hover:border-black/10');
                                     b.setAttribute('aria-pressed', 'true');
                                     b.parentElement.setAttribute('data-selected', b.getAttribute('data-key'));
@@ -1527,7 +1527,7 @@
                                         updateAllPrices(rates);
                                     });
                                 } else {
-                                    b.classList.remove('text-[#083C2F]', 'border-[#083C2F]');
+                                    b.classList.remove('text-[#083C2F]', 'border-[#083C2F]', 'font-bold');
                                     b.classList.add('text-black/10', 'border-transparent', 'hover:border-black/10');
                                     b.setAttribute('aria-pressed', 'false');
                                 }
