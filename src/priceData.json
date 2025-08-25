@@ -61,13 +61,13 @@
         },
         "MEMBER": {
           "SINGLE": {
-            "price": "$180"
+            "price": "$765"
           },
           "DOUBLE": {
-            "price": "$135"
+            "price": "$495"
           },
           "TRIPLE": {
-            "price": "$108"
+            "price": "$405"
           }
         }
       },
