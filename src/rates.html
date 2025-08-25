@@ -1089,6 +1089,36 @@
                                 <!-- Coach image card -->
                                 <div id="coach-card-1"
                                     class="relative w-[380px] h-[500px] rounded-[60px] overflow-hidden bg-gray-100 flex items-end border hover:shadow-lg transition-shadow">
+                                    <img src="images/tommy-card.png"
+                                        alt="Tommy Tan"
+                                        class="absolute inset-0 w-full h-full object-cover" />
+                                    <div class="relative z-10 p-6 flex flex-col">
+                                        <span class="text-white text-lg font-semibold">Tommy Tan</span>
+                                        <span class="text-white text-base">Head Coach</span>
+                                    </div>
+                                    <button
+                                        class="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-white/80 flex items-center justify-center shadow-lg hover:bg-[#083C2F] group transition-colors">
+                                        <svg class="w-6 h-6 text-[#083C2F] group-hover:text-white transition-colors"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            viewBox="0 0 24 24">
+                                            <circle cx="12"
+                                                cy="12"
+                                                r="11"
+                                                stroke="none" />
+                                            <path d="M11 8l4 4-4 4"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                fill="none" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- Coach image card -->
+                                <div id="coach-card-2"
+                                    class="relative w-[380px] h-[500px] rounded-[60px] overflow-hidden bg-gray-100 flex items-end border hover:shadow-lg transition-shadow">
                                     <img src="images/jordan-card.png"
                                         alt="Jordan Tsan"
                                         class="absolute inset-0 w-full h-full object-cover" />
@@ -1117,7 +1147,7 @@
                                     </button>
                                 </div>
                                 <!-- Coach image card -->
-                                <div id="coach-card-2"
+                                <div id="coach-card-3"
                                     class="relative w-[380px] h-[500px] rounded-[60px] overflow-hidden bg-gray-100 flex items-end border hover:shadow-lg transition-shadow">
                                     <img src="images/adrian-card.png"
                                         alt="Adrian Tan"
@@ -1146,36 +1176,7 @@
                                         </svg>
                                     </button>
                                 </div>
-                                <!-- Coach image card -->
-                                <div id="coach-card-3"
-                                    class="relative w-[380px] h-[500px] rounded-[60px] overflow-hidden bg-gray-100 flex items-end border hover:shadow-lg transition-shadow">
-                                    <img src="images/tommy-card.png"
-                                        alt="Tommy Tan"
-                                        class="absolute inset-0 w-full h-full object-cover" />
-                                    <div class="relative z-10 p-6 flex flex-col">
-                                        <span class="text-white text-lg font-semibold">Tommy Tan</span>
-                                        <span class="text-white text-base">Head Coach</span>
-                                    </div>
-                                    <button
-                                        class="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-white/80 flex items-center justify-center shadow-lg hover:bg-[#083C2F] group transition-colors">
-                                        <svg class="w-6 h-6 text-[#083C2F] group-hover:text-white transition-colors"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            viewBox="0 0 24 24">
-                                            <circle cx="12"
-                                                cy="12"
-                                                r="11"
-                                                stroke="none" />
-                                            <path d="M11 8l4 4-4 4"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                fill="none" />
-                                        </svg>
-                                    </button>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -1560,6 +1561,11 @@
 
                 const coachCardData = [
                     {
+                        name: "Tommy Tan",
+                        role: "Head Coach",
+                        description: "Tommy is a PGA-certified coach and is an alumni of the Seletar Junior Programme. Mentored by top professionals like Greg Anketell, he is passionate about helping golfers with foundational and advanced techniques. He has international playing experience and has coached golfers of all levels and ages."
+                    },
+                    {
                         name: "Jordan Tsan",
                         role: "Lead Coach",
                         description: "Jordan makes golf simple and fun with clear, feel-based coaching tailored to each player. He specialises in junior development and personalised progress. He focuses on fostering an encouraging environment for players with age and skill-appropriate drills. "
@@ -1568,14 +1574,7 @@
                         name: "Adrian Tan",
                         role: "Lead Coach",
                         description: "Adrian is a PGA AAA coach with years of experience. He specialises in short game development and creates structured and effective programs to build confidence, consistency, and a lasting love for the game. He has coached golfers of all levels and is committed to help players develop hollistically."
-                    },
-                    {
-                        name: "Tommy Tan",
-                        role: "Head Coach",
-                        description: "Tommy is a PGA-certified coach and is an alumni of the Seletar Junior Programme. Mentored by top professionals like Greg Anketell, he is passionate about helping golfers with foundational and advanced techniques. He has international playing experience and has coached golfers of all levels and ages."
                     }
-
-
                 ];
 
 
